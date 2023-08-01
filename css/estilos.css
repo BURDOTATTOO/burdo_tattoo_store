@@ -68,7 +68,7 @@ body{
 
 
 .category_list{
-	display: fixed;
+	display: flex;
 	flex-direction: column;
 	width: 18%;
 }
