@@ -74,7 +74,7 @@ body{
 }
 
 .category_list .category_item{
-	display: block;
+	display: flex;
 	width: 90%;
 	padding: 15px 0;
 	margin-bottom: 20px;
