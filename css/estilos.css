@@ -68,13 +68,13 @@ body{
 
 
 .category_list{
-	display: flex;
+	display: fixed;
 	flex-direction: column;
 	width: 18%;
 }
 
 .category_list .category_item{
-	display: flex;
+	display: block;
 	width: 90%;
 	padding: 15px 0;
 	margin-bottom: 20px;
