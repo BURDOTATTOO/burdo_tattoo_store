@@ -45,11 +45,11 @@ body{
 	flex-wrap: wrap;
 }
 .button {
-	font-weight: 600;
+	font-weight: 800;
 	display: fixed;
 	flex-direction: column;
 	text-align: center;
-	position: fixed;
+	position: flex;
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -1;
