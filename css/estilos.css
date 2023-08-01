@@ -46,7 +46,7 @@ body{
 }
 .button {
 	font-weight: 800;
-	display: fixed;
+	display: flex;
 	flex-direction: column;
 	text-align: center;
 	position: flex;
