@@ -116,7 +116,7 @@ body{
 }
 
 .products-list .product-item a{
-	display: block;
+	display: flex;
 	width: 100%;
 	padding: 8px 0;
 	background: #2D3E50;
