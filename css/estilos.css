@@ -229,7 +229,7 @@ body{
   
 	/* Oculta el nav en la parte izquiera */
 	.nav {
-	  position: fixed;
+	  position: flex;
 	  top: 0;
 	  left: 0;
 	  right: 0;
