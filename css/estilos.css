@@ -234,7 +234,7 @@ body{
 	  left: 0;
 	  right: 0;
 	  bottom: 0;
-	  background: deepblue;
+	  background: #011350;
 	  transform: translateX(-100vw);
 	  transition: 0.5s;
 	}
