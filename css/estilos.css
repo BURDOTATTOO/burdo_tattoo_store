@@ -340,6 +340,12 @@ body{
 
 
 
+  .slider {
+	display: inline-block;
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
 
 .slider ul {
 	display: flex;
