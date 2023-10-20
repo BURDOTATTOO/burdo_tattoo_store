@@ -68,8 +68,9 @@ body{
 	min-height: 100%;
 	z-index: -1;
     left: 0%;
-	top: 0%
-
+	top: 0%;
+	
+	
 }
 
 
@@ -380,3 +381,87 @@ body{
 	100% {margin-left: -300%;}
 }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el footer */
+footer {
+	background-color: rgba(27, 27, 27, 0.8); /* Gris claro con opacidad del 80% */
+	color: #fff; /* Texto en color blanco */
+	padding: 20px;
+  }
+  
+  .footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .footer-info {
+	flex: 1;
+  }
+  
+  .footer-info h3 {
+	font-size: 24px;
+  }
+  
+  .footer-contact, .footer-social {
+	flex: 1;
+  }
+  
+  .footer-contact h4, .footer-social h4 {
+	font-size: 18px;
+  }
+  
+  .footer-contact p, .footer-social p {
+	font-size: 16px;
+  }
+  
+  .footer-social ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+  }
+  
+  .footer-social li {
+	margin-right: 10px;
+
+  }
+  
+  .footer-copyright {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	
+  }
+
+
+
+  .float{
+	position:fixed;
+	width:40px;
+	height:40px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 5px 5x 5px #999;
+  z-index:100;
+}
