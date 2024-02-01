@@ -1,74 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
+</head>	
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>BURDO_TATTTOO</title>
 
-	<link rel="stylesheet" href="css/estilos.css">
-	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-	<script src="js/jquery-3.2.1.js"></script>
-	<script src="js/script.js"></script>
-	<script rel="Untitled-1.html"></script>
+
+<!-- Header -->
+<header x-data="{ open: false }" class="header">
 	
-</head>
-
-<body>
-    
-    
-    <header>
-        
-        <div class="button" category="button">
-        </div>
-        <div class="button">
-        <video muted autoplay loop> 
-            <source src="./images/Pexels Videos 1085994.mp4">
-        </video>
-        </div> 
-    </header>
-    <div class=""> 
-       <center> <a href="index.html" class="" > <img src="images/bt.png" class="" alt="" > </a></center>
+  <!-- Logo -->
+  <div class="header__logo">
+    <img src="images/btheader.png" alt="">
+  </div>
+  <!-- Boton abrir -->
+  <button class="header__button-nav--open" x-on:click="open = true">Abrir</button>
+  <!-- Navegador -->
+  <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+    <!-- Boton cerrar -->
+    <div class="nav__button" x-on:click="open = false">
+      <button class="header__button-nav--close">Cerrar</button>
     </div>
-    
-</div>
-
-
-<center><section class="products-list">
-
-
-    <!-- =========================================================================
-        //// Tome este código y cópielo en el código fuente de su sitio web ////
-    ========================================================================== -->
-        <div id="miepayco">
-            <script defer type="text/javascript" 
-                src="https://mi-epayco.s3.amazonaws.com/embed.js" 
-                miepaycoUrl="https://mmunoz1270667.epayco.me">
-            </script> 
-        </div>
-    <!-- ====================================================================== -->
-    
+    <!-- Menu -->
+    <ul class="nav__ul">
+      <li class="nav__item"><a href="https://www.instagram.com/burdo_tattoo/" class="nav__link">instagram</a></li>
+      <li class="nav__item"><a href="index.html" class="nav__link">INICIO</a></li>
+      <li class="nav__item"><a href="Untitled-1.html" class="nav__link">ROPA Y ACCESORIOS</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Piercings.</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">TATTOO Supplies.</a></li>
+    </ul>
+  </nav>
+  <!-- Fin Navegador -->
+</header>
+<!-- Fin Header -->
+<body class="hidden" >
 	
-    <div class="product-item" category="buzos">
-        <img src="images/united1.PNG" alt="" >
-        <a href="https://www.instagram.com/p/CvG-qKiu66q/"></a>
-    </div>
-    <div class="product-item" category="buzos">
-        <img src="images/united2.PNG" alt="" >
-        <a href="https://www.instagram.com/p/CvG-mCfuYfJ/"></a>
-    </div>
-    
-    <div class="product-item" category="camisetacortagirl">
-        <img src="images/united3.PNG" alt="" >
-        <a href="https://www.instagram.com/p/CvG-i_MOeaS/"></a>
-    </div>
-    
-    <div class="product-item" category="camisetacortagirl">
-        <img src="images/instafoto.png" alt="" >
-        <a href="https://www.instagram.com/burdo_tattoo/">PROFILE</a>
-    </div>
-   </section></center>  
-    
+	<div class="centrado" id="onload">
+	<div class="lds-circle">
+    	 <div>
+         </div>
+	</div>
+	</div>
+	<div class="wrap">			
+		<h1>@BURDO_TATTTOO</h1>
+		<h3>Clothing store</h3>
+		<div class="store-wrapper">
+
+
+	<div class="slider">
+	<ul>
+	<li>
+	  <img src="images/united3.PNG" alt="">
+	 </li>
+	<li>
+	  <img src="Untitled-1.html" alt="">	 
+	</li>
+	<li>
+	  <img src="images/united2.PNG" alt="">
+	</li>
+	<li>
+	  <img src="images/united3.PNG" alt="">
+	</li>
+	</ul>
+	</div>
+			
+			<div class="backgroundvideo" category="backgroundvideo">
+				<video muted autoplay loop> 
+					<source src="./images/Pexels Videos 1085994.mp4">
+				</video>
+			
+			</div>
+			
+
+			<div class="category_list">
+				<a href="#" class="category_item" category="all">Todo</a>
+				<a href="#" class="category_item" category="camisetas">Camisetas</a>
+				<a href="#" class="category_item" category="tattoo">TATTOO</a>
+				<a href="#" class="category_item" category="supplie">TATTOO SUPPLIES</a>
+				<a href="#" class="category_item" category="piercing">Piercing</a>
+			</div>
+			<section class="products-list">
+				<div class="product-item" category="camisetas">
+					<img src="images/btblackcl.png" alt="" >
+					<a href="https://www.instagram.com/p/CjG4TucupSJ/?utm_source=ig_web_copy_link">CAMISETA TELA BURDA 50.000$ COP</a>
+				</div>
+                <div class="product-item" category="camisetas">
+					<img src="images/burdo3blackcl.png" alt="" >
+					<a href="https://www.instagram.com/p/CjG4TucupSJ/?utm_source=ig_web_copy_link">CAMISETA TELA BURDA 50.000$ COP</a>
+				</div>
+                <div class="product-item" category="camisetas">
+					<img src="images/MOCKUP REALISTA.png" alt="" >
+					<a href="https://www.instagram.com/p/CjG4TucupSJ/?utm_source=ig_web_copy_link">CAMISETA TELA BURDA 50.000$ COP</a>
+				</div>
+                <div class="product-item" category="camisetas">
+					<img src="images/btblackcl.png" alt="" >
+					<a href="https://www.instagram.com/p/CjG4TucupSJ/?utm_source=ig_web_copy_link">CAMISETA TELA BURDA 50.000$ COP</a>
+				</div>
+				<div class="product-item" category="camisetas">
+					<img src="images/cortamujer.png" alt="" >
+					<a href="https://www.instagram.com/p/CjHZNk7tmD9/?utm_source=ig_web_copy_link">CAMISETA TELA BURDA 50.000$ COP</a>
+				</div>
+				<div class="product-item" category="camisetas">
+					<img src="images/buzobt.png" alt="" >
+					<a href="https://www.instagram.com/p/CjG4hHeu5XE/?utm_source=ig_web_copy_link">CAMISETA TELA BURDA 50.000$ COP</a>
+				</div>
+				
+				<div class="product-item" category="camisetas">
+					<img src="images/Polo_Shirt_Mockup.png" alt="" >
+					<a href="https://www.instagram.com/p/CjI5klfubpk/?utm_source=ig_web_copy_link">CAMISETA TELA BURDA 50.000$ COP</a>
+				</div>
+
+				<div class="product-item" category="camisetas">
+					<img src="images/btblackcl.png" alt="" >
+					<a href="https://www.instagram.com/p/CjG4TucupSJ/?utm_source=ig_web_copy_link">CAMISETA TELA BURDA 50.000$ COP</a>
+				</div>
+				
+
+
+				
+			</section>
+		</div>
+	</div>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<a href="https://w.app/l7crTa" class="float" target="_blank">
+	<i class="fa fa-whatsapp my-float"></i>
+	</a>
+
+
+	<footer>
+		
+		
+		<div class="footer-content">
+		  <div class="footer-info">
+			<h3>¡Contáctame!</h3>
+			<p>Si estás interesado en obtener un tatuaje único y personalizado en el estilo neotradicional, ¡estoy aquí para ayudarte!</p>
+		  </div>
+		  
+		  <div class="footer-contact">
+			<h4>Información de Contacto:</h4>
+			<p><strong>Nombre:</strong> MIGUEL ANGEL M.C.</p>
+			<p><strong>Ubicación:</strong> Medellín, Colombia</p>
+			<p><strong>Experiencia:</strong> 8 años de tatuaje</p>
+			<p><strong>Especialidad:</strong> Tatuajes Neotradicionales</p>
+		  </div>
+		  
+		  <div class="footer-social">
+			<h4>Sígueme en las Redes:</h4>
+			<ul>
+			  <li><a href="https://www.instagram.com/burdo_tattoo/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+			  <li><a href="https://www.facebook.com/mackraker" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			</ul>
+		  </div>
+		</div>
+		
+		
+	  
+	  
+	  
+	  
+	  
 </body>
 </html>
     
