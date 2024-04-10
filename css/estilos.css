@@ -319,7 +319,7 @@ body{
     width: 64px;
     height: 64px;
     margin: 8px;
-    background-image: url('images/bt.png'); /* Ruta a tu imagen de logo */
+    background-image: url('/images/bt.png'); /* Ruta a tu imagen de logo */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el espacio del div */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
     border-radius: 50%;
