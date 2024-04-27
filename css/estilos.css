@@ -79,6 +79,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	width: 18%;
+	margin-top: 5%;
 }
 
 .category_list .category_item{
@@ -102,6 +103,7 @@ body{
 	width: 82%;
 	display: flex;
 	flex-wrap: wrap;
+	
 }
 
 
