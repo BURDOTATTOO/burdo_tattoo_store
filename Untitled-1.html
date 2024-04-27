@@ -21,35 +21,130 @@
 </head>	
 
 
-
 <!-- Header -->
-<header x-data="{ open: false }" class="header">
+<header>
 	
-  <!-- Logo -->
-  <div class="header__logo">
-    <img src="images/bt.png" alt="">
-  </div>
-  <!-- Boton abrir -->
-  <button class="header__button-nav--open" x-on:click="open = true">CATEGORIAS</button>
-  <!-- Navegador -->
-  <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
-    <!-- Boton cerrar -->
-    <div class="nav__button" x-on:click="open = false">
-      <button class="header__button-nav--close">Cerrar</button>
+  
+
+      
+    <div class="xs-menu-cont">
+    <a id="menutoggle"><i class="fa fa-align-justify"><img src="/burdo_tattoo_store/images/bt.png" alt=""></i> </a>
+      <nav class="xs-menu displaynone">
+        
+        <ul>
+          <li class="active">
+            <a href="/index.html">INICIO</a>
+          </li>
+          <li>
+             <a href="/TATTOOSHOP.html">TATTOO SHOP</a>
+          </li>
+          <li>
+            <a href="/piercing.html">PIERCINGS</a>
+          </li>
+          <li>
+            <a href="/Untitled-1.html">ROPA/ACCESORIOS</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/burdo_tattoo/">GALERIA</a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=573017548772&text=%E2%9C%8BHola%20quiero%20informacion%20acerca%20de%20Burdo-Tattoo%F0%9F%92%89">QUIENES SOMOS</a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=573017548772&text=%E2%9C%8BHola%20quiero%20informacion%20acerca%20de%20Burdo-Tattoo%F0%9F%92%89">CONTACTO</a>
+          </li>
+    
+        </ul>
+        
+      </nav>
     </div>
-    <!-- Menu -->
-    <ul class="nav__ul">
-      
-     <li class="nav__item"><a href="TATTOOSHOP.html" class="nav__link">TATTOO Supplies.</a></li>
-	  <li class="nav__item"><a href="piercing.html" class="nav__link">Piercings.</a></li> 
-	  <li class="nav__item"><a href="index.html" class="nav__link">INICIO</a></li>
-      <li class="nav__item"><a href="Untitled-1.html" class="nav__link">ROPA Y ACCESORIOS</a></li>
-      <li class="nav__item"><a href="https://www.instagram.com/burdo_tattoo/" class="nav__link">instagram</a></li>
-      
-    </ul>
-  </nav>
-  <!-- Fin Navegador -->
-</header>
+    <nav class="menu">
+      <ul>
+        <li class="active">
+          <a href="/TATTOOSHOP.html">TATTOOSHOP</a>
+        </li>
+        <li class="drop-down">
+          <a href="/piercing.html">PIERCINGS</a>
+         
+          <div class="mega-menu fadeIn animated">
+            <div class="mm-6column">
+              <span class="left-images">
+              <img  src="/images/logoheader.png">
+              <p>Agenda tu cita ahora!</p>
+      </span>
+              <span class="categories-list">
+            <ul>
+            <span>OREJA</span>
+              <li>INDUSTRIAL</li>
+              <li>HELIX</li>
+              <li>CONCHA </li>
+              <li>SNUG </li>
+              <li>LOBULO</li>
+              <li>TRAGO</li>
+              <li>ANTITRAGO</li>
+              <li><a class="mm-view-more" href="/piercing.html">View more →</a></li>
+            </ul>
+          </span>
+            
+            </div>
+            <div class="mm-3column">
+          <span class="categories-list">
+          <ul>
+             <span>NARIZ</span>
+              <li>APUENTE
+              <li>NASALLANG
+              <li>RHINO
+              <li>SEPTUM
+              <li>SEPTRIL
+              <li>NOSTRIL
+              <li>AUSTIN BAR
+              <li>NOSTRIL ALTO 
+              <li><a class="mm-view-more" href="/piercing.html">View more →</a></li>
+            </ul>
+          </span>             
+            </div>
+            <div class="mm-3column">
+              <span class="categories-list">
+          <ul>
+            <span>BOCA</span>
+            <li>MADONA</li>
+            <li>MEDUSA</li>
+            <li>MONROE</li>
+            <li>JESTRUM</li>
+            <li>ASHLEY</li>
+            <li>SNAKE BITES</li>
+            <li>LABRET</li>
+            <li>DOLPHIN BITES</li>
+            <li>SPIDER BITES</li>
+            <li>DAHLIA</li>
+
+              <li><a class="mm-view-more" href="/piercing.html">View more →</a></li>
+          </ul>
+        </span>
+          </div>
+        </div>
+     
+        </li>
+        <li>
+          <a href="/index.html">INICIO</a>
+        </li>
+        <li>
+          <a href="/Untitled-1.html">ROPA/ACCESORIOS</a>
+        </li>
+        
+        <li>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=573017548772&text=%E2%9C%8BHola%20quiero%20informacion%20acerca%20de%20Burdo-Tattoo%F0%9F%92%89">CONTACTO</a>
+        </li>
+       <li style="float:right;">
+         <a href="https://www.facebook.com/marketplace/profile/1142115026/">MARKETPLACE</a>
+        </li>
+    
+      </ul>
+    </nav>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+    </header>
 <!-- Fin Header -->
 <body class="hidden" >
 	
