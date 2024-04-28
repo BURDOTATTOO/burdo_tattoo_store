@@ -799,6 +799,17 @@ footer {
 
 
 
+	.portadaprincipal{
+
+		margin-top: 5%;
+		align-items: center;
+
+	}
+	@media screen and (max-width: 600px) {
+		.portadaprincipal {
+		  margin-top: 10%;
+		}
+	  }
 
 
 
