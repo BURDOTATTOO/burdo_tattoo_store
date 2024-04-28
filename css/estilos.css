@@ -808,6 +808,7 @@ footer {
 	@media screen and (max-width: 600px) {
 		.portadaprincipal {
 		  margin-top: 10%;
+			max-width: 100%;
 		}
 	  }
 
