@@ -62,12 +62,19 @@ body{
 	}
 
 
-body {
-  background-color: #111111;
-  margin: 0;
-  overflow-x: hidden;
-}
 
+.backgroundvideo{
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+    left: 0%;
+	top: 0%;
+	max-width: 100%;
+	
+	
+	
+}
 
 
 
