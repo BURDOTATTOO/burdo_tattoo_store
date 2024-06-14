@@ -1,206 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>BURDO</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js" async></script>
+    <title>ADOBE</title>
+</head>
+<body>
+   <!-- Header -->
+<header>
+	
+  
 
-	<link rel="stylesheet" href="css/estilos.css">
-	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-	<script src="js/jquery-3.2.1.js"></script>
-	<script src="js/script.js"></script>
-	<script src="index.html"></script>
-	<script rel="Untitled-1.html"></script>
-	<script rel="piercing.html"></script>
-	<!-- AlpineJS para gestionar el evento Clic -->
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<script defer src="functions.js"></script>
-
-</head>	
-
-<header style="width: 100%; height: 20px;">
-<div style="background-color: rgb(4, 76, 143);"><center><h1 style="font-size: xx-large; color: aliceblue;">ACADEMIA ANTIOQUIA</h1></center></div>
-</header>
-
-
-<body style="background-color: rgb(4, 4, 44);">
-    
-
-<center><div style="margin-top: 6%;">
-<ul>
-    
-    <li><a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a></li>
-   
-</ul>
-
-<div id="modal2" class="modalmask">
-    <div class="modalbox rotate">
-        <a href="#close" title="Close" class="close">X</a>
-        <center><iframe style="margin-top: 3%;" src="https://mmunoz1270667.epayco.me" width="320px" height="483px" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe></center>
-    </div>
-</div>
-
-</div>
-
-</div></center>
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="centrado" id="onload">
-	<div class="lds-circle">
-    	 <div>
-         </div>
-	</div>
-	</div>
+      
+    <div class="xs-menu-cont">
+    <a id="menutoggle"><i ><img src="/images/btlogoheader.png" alt=""></i>  </a>
+      <nav class="xs-menu displaynone">
         
-
-		
-	<div class="wrap">			
-		
-
-
-		
-		<section id="container-slider" >	
-            <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
-            <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
-            <ul class="listslider">
-              <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
-              <li><a itlist="itList_1" href="#"></a></li>
-              <li><a itlist="itList_2" href="#"></a></li>
+        <ul>
+          <li class="active">
+            <a href="/index.html">INICIO</a>
+          </li>
+		 <li>
+             <a href="/LANDING.html">BECAS CON BURDO TATTOO</a>
+		<li class="active">
+            <a href="https://www.facebook.com/marketplace/profile/1142115026/">MARKETPLACE</a>
+          </li>
+	
+          <li>
+             <a href="/TATTOOSHOP.html">TATTOO SHOP</a>
+          </li>
+          <li>
+            <a href="/piercing.html">PIERCINGS</a>
+          </li>
+          <li>
+            <a href="/Untitled-1.html">ROPA/ACCESORIOS</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/burdo_tattoo/">GALERIA</a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=573017548772&text=%E2%9C%8BHola%20quiero%20informacion%20acerca%20de%20Burdo-Tattoo%F0%9F%92%89">QUIENES SOMOS</a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=573017548772&text=%E2%9C%8BHola%20quiero%20informacion%20acerca%20de%20Burdo-Tattoo%F0%9F%92%89">CONTACTO</a>
+          </li>
+    
+        </ul>
+        
+      </nav>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li class="active">
+          <a href="/TATTOOSHOP.html">TATTOOSHOP</a>
+        </li>
+        <li class="drop-down">
+          <a href="/piercing.html">PIERCINGS</a>
+         
+          <div class="mega-menu fadeIn animated">
+            <div class="mm-6column">
+              <span class="left-images">
+              <img  src="/images/logoheader.png">
+              <p>Agenda tu cita ahora!</p>
+      </span>
+              <span class="categories-list">
+            <ul>
+            <span>OREJA</span>
+              <li>INDUSTRIAL</li>
+              <li>HELIX</li>
+              <li>CONCHA </li>
+              <li>SNUG </li>
+              <li>LOBULO</li>
+              <li>TRAGO</li>
+              <li>ANTITRAGO</li>
+              <li><a class="mm-view-more" href="/piercing.html">View more →</a></li>
             </ul>
-            <ul id="slider" >
-              <li style="background-image: url('/images/LANDIG/tecnicas/DISEÑO\ GRAFICO.jpg'); z-index:0; opacity: 1;">
-                <div class="content_slider" >
-                  <div>
-                    <h2>DISEÑO GRAFICO OMOLOGABLE</h2>
-                <p>🌟GRADUATE EN TECNICO DE DISEÑO GRAFICO Y CERTIFICA TUS CONOCIMIENTOS EN LOS MEJORES PROGRAMAS COMO ILLUSTRATOR, PHOTOSHOP, INDESIGN, Y RECIBE LICENCIAS PARA TODA LA SUITE DE ADOBE</p>
-                <a href="#modal2" class="btnSlider">Ver más</a>
-              </div>
-                </div>
-              </li>
-              <li style="background-image: url('/images/LANDIG/tecnicas/MERCADEO.jpg'); ">
-                <div class="content_slider" >
-                  <div>
-                    <h2>MERCADEO</h2>
-                '<p>RECIBE EL TITULO DE TECNICO EN MERCADEO UN TECNICO CAPAZ DE REALIZAR UN EXCELENTE TRABAJO DE NEGOCIACION DONDE EL GANA A GANA SEA PARA AMBAS PARTES DONDE SEA CAPAZ DE IMPLEMENTAR ESTRATEGIAS PARA OPTIMIZAR Y ASEGURAR SIEMPRE UN CERRE DE NEGOCIO</p>
-                <a href="#modal2" class="btnSlider">Ver más</a>
-              </div>
-                </div>
-              </li>
-              <li style="background-image: url('/images/LANDIG/tecnicas/MEDICINA\ PREVENTIVA\ EN\ ANIMALES\ DE\ COMPAÑIA.jpg'); ">
-                <div class="content_slider" >
-                  <div>
-                    <h2>MEDICINA PREVENTIVA EN ANIMALES DE COMPAÑIA</h2>
-                <p>La medicina preventiva en mascotas promueve la salud mediante vacunación, desparasitación y exámenes veterinarios. En redes sociales, resalta su importancia para fortalecer el vínculo con las mascotas, prolongar su vida y proporcionar cuidados óptimos, atrayendo a dueños preocupados por el bienestar animal.💫</p>
-                <a href="#modal2" class="btnSlider">Ver más</a>
-              </div>
-                </div>
-              </li>
-           </ul>
-           
-         </section>
+          </span>
+            
+            </div>
+            <div class="mm-3column">
+          <span class="categories-list">
+          <ul>
+             <span>NARIZ</span>
+              <li>APUENTE
+              <li>NASALLANG
+              <li>RHINO
+              <li>SEPTUM
+              <li>SEPTRIL
+              <li>NOSTRIL
+              <li>AUSTIN BAR
+              <li>NOSTRIL ALTO 
+              <li><a class="mm-view-more" href="/piercing.html">View more →</a></li>
+            </ul>
+          </span>             
+            </div>
+            <div class="mm-3column">
+              <span class="categories-list">
+          <ul>
+            <span>BOCA</span>
+            <li>MADONA</li>
+            <li>MEDUSA</li>
+            <li>MONROE</li>
+            <li>JESTRUM</li>
+            <li>ASHLEY</li>
+            <li>SNAKE BITES</li>
+            <li>LABRET</li>
+            <li>DOLPHIN BITES</li>
+            <li>SPIDER BITES</li>
+            <li>DAHLIA</li>
 
-		<div class="store-wrapper">
-			
-		<center><h1 style="color: white; font-size: xx-large; margin-top: 10%;">TODAS NUESTRAS BECAS ESTAN SUJETAS A TERMINOS Y CONDICIONES CONSULTA EN NUESTRO WHATSAPP</h1></center>
+              <li><a class="mm-view-more" href="/piercing.html">View more →</a></li>
+          </ul>
+        </span>
+          </div>
+        </div>
+     
+        </li>
+        <li>
+          <a href="/index.html">INICIO</a>
+        </li>
+	       <li>
+          <a href="/LANDING.html">ADOBE CRATIVE CLOUD</a>
+        </li>
+        <li>
+          <a href="/Untitled-1.html">ROPA/ACCESORIOS</a>
+        </li>
+        
+        <li>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=573017548772&text=%E2%9C%8BHola%20quiero%20informacion%20acerca%20de%20Burdo-Tattoo%F0%9F%92%89">CONTACTO</a>
+        </li>
+       <li style="float:right;">
+         <a href="https://www.facebook.com/marketplace/profile/1142115026/">MARKETPLACE</a>
+        </li>
+    
+      </ul>
+    </nav>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+    </header>
+<!-- Fin Header -->
+
+
+<div>
+	<div class="queryvideoprincipal" style="margin-top: 2%;">
+		<center>
+			<iframe width="350" height="315" src="https://www.youtube.com/embed/P12OQkEQ4ko?si=jFvYRusxecJu6Rfr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</center>
+		<h1 style="font-size: x-large; color: rgb(41, 42, 43); margin-left: 2%;"> 
+			<img src="/images/btlogoheader.png" alt=""> 
+			En este video se puede evidenciar la funcionalidad de los programas uno por uno, cómo se ejecutan sin errores ni necesidad de tener la licencia original. Este post está dirigido a todos los diseñadores e ilustradores que han descargado programas no deseados y han ingresado de manera burlona a enlaces de publicidad. En este post, por un valor mínimo de 10.000$ colombianos, podrás adquirir permanentemente la última versión del año actual y todas sus funcionalidades principales.
+			<img src="/images/btlogoheader.png" alt="">
+		</h1>
+		 
 		
-
-		
-		<div class="store-wrapper">
-			
-
-			
-			
-
+	</div>
+	
 	
 
-			<center><section class="products-list">
-			
-				<div class="product-item" category="camisetas">
-					<img src="/images/LANDIG/tecnicas/DISEÑO GRAFICO.jpg" alt="" >
-					<a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a>
-				</div>
-				<div class="product-item" category="camisetas">
-					<img src="/images/LANDIG/tecnicas/ENTRENAMIENTO DEPORTIVO.jpg" alt="" >
-					<a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a>
-				</div>
-				<div class="product-item" category="camisetas">
-					<img src="images/LANDIG/tecnicas/GESTION DE PROYECTOS.jpg" alt="" >
-					<a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a>
-				</div>
-				
-				<div class="product-item" category="camisetas">
-					<img src="/images/LANDIG/tecnicas/GESTION DOCUMENTAL.jpg" alt="" >
-					<a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a>
-				</div>
-				
-				<div class="product-item" category="tattoo">
-					<img src="images/LANDIG/tecnicas/MASOTERAPIA.jpg" alt="" >
-					<a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a>
-				</div>
-				<div class="product-item" category="tattoo">
-					<img src="images/LANDIG/tecnicas/MEDICINA PREVENTIVA EN ANIMALES DE COMPAÑIA.jpg" alt="" >
-					<a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a>
-				</div>
-				<div class="product-item" category="tattoo">
-					<img src="images/LANDIG/tecnicas/MERCADEO.jpg" alt="" >
-					<a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a>
-				</div>
-				
-				<div class="product-item" category="tattoo">
-					<img src="images/LANDIG/tecnicas/OPERACION DE MAQUINARIA PESADA.jpg" alt="" >
-					<a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a>
-				</div>
-				
-				<div class="product-item" category="supplie">
-					<img src="images/LANDIG/tecnicas/OPERACIONES FINANCIERAS.jpg" alt="" >
-					<a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a>
-				</div>
-				
-			
-				
-				<div class="product-item" category="supplie">
-					<img src="images/LANDIG/tecnicas/SALUD Y NUTRICION.jpg" alt="" >
-					<a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a>
-				</div>
-				
+<center><h1 style="font-size: xx-large;">INSTRUCCIONES DE COMPRA!!!</h1></center>
+<div>
+<center> <ul style="background-color: rgba(0, 0, 255, 0.26)">
+<li>1. Realiza la seleccion de cada uno de los programas que deseas comprar y agregalos al carrito</li>
+<li>2. Toma PANTALLAZO DEL PAGO!!! Muy IMPORTANTE</li>
+<li>3. Toma PANTALLAZO DEL DESCUENTO en tu extracto bancario a razon del PAGO</li>
+<li>5. ENVIA LOS PANTALLAZOS A BURDOTATTOOSTORE@GMAIL.COM</li>
 
-                <div class="product-item" category="tattoo">
-					<img src="images/LANDIG/tecnicas/MERCADEO.jpg" alt="" >
-					<a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a>
-				</div>
-				
-                <div class="product-item" category="camisetas">
-					<img src="/images/LANDIG/tecnicas/ENTRENAMIENTO DEPORTIVO.jpg" alt="" >
-					<a href="#modal2"><h1 style="font-size: xx-large;">QUIERO MI BECA YA!!!</h1></a>
-				</div>
-			</section></center>
+
+ </ul></center>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYm-TmTtOz7QXYWtAuFnD9jdDZkTce7XKwgll4BCPOGqbx8w/viewform?embedded=true" width="350" height="315" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe></center>
+
+
+
+
+
+
+
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Adobe Illustrator 2024</span>
+                <img src="/images/LANDIG/illustrator.png" alt="" class="img-item">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Adobe Photoshop 2024</span>
+                <img src="images/LANDIG/photoshop.png" alt="" class="img-item">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Adobe Premiere Pro 2024</span>
+                <img src="images/LANDIG/premiere.png" alt="" class="img-item">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+			<div class="item">
+                <span class="titulo-item">Adobe Lightroom Classic</span>
+                <img src="images/LANDIG/lrc.png" alt="" class="img-item">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Adobe InDesign 2024</span>
+                <img src="images/LANDIG/indesing.png" alt="" class="img-item">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Adobe After Effects 2024</span>
+                <img src="images/LANDIG/AF.png" alt="" class="img-item">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+			<div class="item">
+                <span class="titulo-item">Adobe Character Animator 2024</span>
+                <img src="images/LANDIG/chartacter animator.png" alt="" class="img-item">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Adobe Audition 2024</span>
+                <img src="images/LANDIG/AU.png" alt="" class="img-item">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Adobe Animate 2024</span>
+                <img src="images/LANDIG/AN.png" alt="" class="img-item">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Adobe Substance 3D Painter</span>
+                <img src="images/LANDIG/PT.png" alt="" class="img-item">
+                <span class="precio-item">$10.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Adobe Media Encoder 2024</span>
+                <img src="images/LANDIG/ME.png" alt="" class="img-item">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+			
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar"><a href="#modal2" class="btnSlider" style=" font-size: xx-large;">PAGAR</a> <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+	<div id="modal2" class="modalmask">
+		<div class="modalbox rotate">
+			<a href="#close" title="Close" class="close">X</a>
+			<center><iframe style="margin-top: 3%;" src="https://mmunoz1270667.epayco.me" width="320px" height="483px" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe></center>
 		</div>
 	</div>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<a href="https://api.whatsapp.com/send?phone=573017548772&text=HOLA!!%20Quiero%20realizar%20una%20compra%20con%20ustedes%20de%20su%20pagina%20%F0%9F%92%89%F0%9F%92%89%F0%9F%92%89" class="float" target="_blank">
-	<i class="fa fa-whatsapp my-float"></i>
-	</a>
 
-<center><div>
-<div id="sfchq8ap5fdqqu4gzx5yp5p9sby6yh363mc"></div>
-<script type="text/javascript" src="https://counter11.optistats.ovh/private/counter.js?c=hq8ap5fdqqu4gzx5yp5p9sby6yh363mc&down=async" async></script>
-<noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas para blogger"><img src="https://counter11.optistats.ovh/private/contadorvisitasgratis.php?c=hq8ap5fdqqu4gzx5yp5p9sby6yh363mc" border="0" title="contador de visitas para blogger" alt="contador de visitas para blogger"></a></noscript>
-</div></center>
-	
-	  
-	  
+
+
+
+
+	<center><h1 style="font-size: xx-large;">INSTRUCCIONES DE INSTALACION!!!</h1></center>
+
+	<div style="margin-top: 3%;">
+<center><ul style="background-color: rgba(0, 0, 255, 0.26);">
+	<li>se recomienda la desactivacion del antivirus para que se crakee el aplicativo adecuadamente</li>
+	<li>1. haga doble click en el archivo Formato .ISO</li>
+	<li>1-1. haga click en montar unidad virtual de CD</li>
+	<li>1-2. ejecuque el autorun y seleccione el instaldor</li>
+	<li>2. realice el paso a paso presionando siguiente a cada opcion que nos diga el instalador</li>
+	<li>3. ejecute el programa y revise su funcionalidad </li>
+	<li>en caso de algun error revisar que se tengan instalados todos los componentes de windows media player</li>
+</center></ul>
+
+	</div>
+<center><h1 style="font-size: xx-large; margin-top: 1%;">Requisitos Minimos del Sistema</h1></center>
+
+<p style="margin-top: 2%; background-color: rgba(0, 0, 255, 0.349);">Requisitos mínimos y recomendados del sistema para Windows
+	Mínimo	Recomendado
+	Sistema operativo	Windows 10 (64-bit), versión 1903 y posterior*
+	RAM	2 GB	4 GB o más
+	Espacio en el disco duro	4 GB de espacio disponible en el disco duro; se necesita espacio adicional para la instalación
+	Internet	Conexión a Internet</p>
+
+
+
+
 </body>
+
+
+
+<footer style="margin-top: 10%;">
+		
+		
+	<div class="footer-content">
+	  <div class="footer-info">
+		<h3>¡Contáctame!</h3>
+		<p>Si estás interesado en obtener un tatuaje único y personalizado en el estilo neotradicional, ¡estoy aquí para ayudarte!</p>
+	  </div>
+	  
+	  <div class="footer-contact">
+		<h4>Información de Contacto:</h4>
+		<p><strong>Nombre:</strong> MIGUEL ANGEL M.C.</p>
+		<p><strong>Ubicación:</strong> Medellín, Colombia</p>
+		<p><strong>Experiencia:</strong> 8 años de tatuaje</p>
+		<p><strong>Especialidad:</strong> Tatuajes Neotradicionales</p>
+	  </div>
+	  
+	  <div class="footer-social">
+		<h4>Sígueme en las Redes:</h4>
+		<ul>
+		  <li><a href="https://www.instagram.com/burdo_tattoo/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		  <li><a href="https://www.facebook.com/mackraker" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		</ul>
+	  </div>
+	</div>
+	
+	
+	<embed src="https://mmunoz1270667.epayco.me" frameborder="0" style="width: 350px; height: 400px;"></embed>
+ <center> <img src="/images/eternal logo.png" alt=""></center>
+<h1 style="font-size: large;">Apoya el arte y la creatividad mientras transformas tu imagen en algo único. En nuestra plataforma, no solo encontrarás talentosos artistas del tatuaje y del piercing, sino que también tendrás la oportunidad de contribuir al florecimiento de la comunidad artística. Cada donación que realices nos permite seguir impulsando el arte y brindar oportunidades a nuevos talentos. ¡Haz tu marca en el mundo del arte y la autenticidad con tu apoyo!</h1>
+</footer>
+  
 </html>
