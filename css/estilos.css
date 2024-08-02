@@ -29,10 +29,11 @@ body{
 }
 .wrap > h1:after{
 	content: '';
-	width: 100%;
+	width: 80%;
 	height: 1px;
 	background: #C7C7C7;
 	margin: 5px 0;
+	align-self: center;
 	}
 
 	
