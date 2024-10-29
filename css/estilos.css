@@ -374,6 +374,38 @@ body{
 
 
 
+/* Estilo para la categoría liveyoutube */
+.liveyoutube {
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.liveyoutube img {
+    width: 100%; /* Se asegura que la imagen ocupe el ancho disponible */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+.liveyoutube p {
+	color: aliceblue;
+	font-display: flex;
+}
+/* Estilos específicos para dispositivos móviles y tablets */
+@media (max-width: 768px) {
+    .liveyoutube img {
+        width: 315px;  /* Ancho específico para móviles */
+        height: 220px; /* Alto específico para móviles */
+		margin-top: 0%;
+    }
+}
+/* Estilos para pantallas más grandes (PC) */
+@media (min-width: 769px) {
+    .liveyoutube img {
+        width: 600px;  /* Ancho específico para PC */
+        height: 400px; /* Alto específico para PC */
+    }
+}
+
+
 
 
 
