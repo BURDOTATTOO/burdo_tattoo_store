@@ -52,32 +52,42 @@ $(document).ready(function(){
 
 
 
-
-function field_focus(field, email)
-  {
-    if(field.value == email)
-    {
+function field_focus(field, email) {
+    if(field.value == email) {
       field.value = '';
     }
   }
 
-  function field_blur(field, email)
-  {
-    if(field.value == '')
-    {
+  function field_blur(field, email) {
+    if(field.value == '') {
       field.value = email;
     }
   }
 
-//Fade in dashboard box
-$(document).ready(function(){
+  $(document).ready(function(){
     $('.box').hide().fadeIn(1000);
-    });
 
-//Stop click event
-$('a').click(function(event){
+    // Asignar usuario y contraseña automáticamente
+    document.getElementsByClassName("email")[0].value = "Burdo";       // Usuario
+    document.getElementsByClassName("email")[1].value = "12345678";   // Contraseña
+
+    // Validación de login
+    $('#signin').click(function() {
+      let usuario = document.getElementsByClassName("email")[0].value;
+      let contraseña = document.getElementsByClassName("email")[1].value;
+
+      if (usuario === "Burdo" && contraseña === "12345678") {
+        window.location.href = "/burdo_tattoo_store-main/pasarela.html";
+      } else {
+        alert("Usuario o contraseña incorrectos.");
+      }
+    });
+  });
+
+  // Stop all other <a> clicks
+  $('a').click(function(event){
     event.preventDefault(); 
-	});
+  });
 
 
 
