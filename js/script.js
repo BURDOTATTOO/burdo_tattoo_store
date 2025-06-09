@@ -69,7 +69,7 @@ function field_focus(field, email) {
 
     // Asignar usuario y contraseña automáticamente
     document.getElementsByClassName("email")[0].value = "Burdo";       // Usuario
-    document.getElementsByClassName("email")[1].value = "12345678";   // Contraseña
+    document.getElementsByClassName("email")[1].value = "";   // Contraseña
 
     // Validación de login
     $('#signin').click(function() {
