@@ -77,7 +77,7 @@ function field_focus(field, email) {
       let contraseña = document.getElementsByClassName("email")[1].value;
 
       if (usuario === "Burdo" && contraseña === "12345678") {
-        window.location.href = "/burdo_tattoo_store-main/pasarela.html";
+        window.location.href = "/pasarela.html";
       } else {
         alert("Usuario o contraseña incorrectos.");
       }
