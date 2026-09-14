@@ -1,0 +1,1788 @@
+/* ================================= */
+/* VARIABLES */
+/* ================================= */
+
+:root {
+
+    --bg:
+    #050608;
+
+    --bg-light:
+    #0b0e13;
+
+    --blue:
+    #2d6cff;
+
+    --blue-dark:
+    #17346d;
+
+    --text:
+    #ffffff;
+
+    --gray:
+    #a8a8a8;
+
+}
+
+
+/* ================================= */
+/* RESET */
+/* ================================= */
+
+* {
+
+    margin:
+    0;
+
+    padding:
+    0;
+
+    box-sizing:
+    border-box;
+
+}
+
+
+html {
+
+    scroll-behavior:
+    smooth;
+
+}
+
+
+body {
+
+    background:
+    var(--bg);
+
+    color:
+    var(--text);
+
+    font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+    overflow-x:
+    hidden;
+
+}
+
+
+img {
+
+    width:
+    100%;
+
+    display:
+    block;
+
+}
+
+
+a {
+
+    text-decoration:
+    none;
+
+    color:
+    inherit;
+
+}
+
+
+
+/* ================================= */
+/* HEADER */
+/* ================================= */
+
+.header {
+
+    width:
+    100%;
+
+    background:
+    rgba(5, 6, 8, 0.95);
+
+    border-bottom:
+    1px solid
+    rgba(45, 108, 255, 0.4);
+
+    position:
+    sticky;
+
+    top:
+    0;
+
+    z-index:
+    1000;
+
+    backdrop-filter:
+    blur(10px);
+
+}
+
+
+.navbar {
+
+    max-width:
+    1400px;
+
+    margin:
+    auto;
+
+    min-height:
+    90px;
+
+    padding:
+    10px 40px;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    justify-content:
+    space-between;
+
+    gap:
+    30px;
+
+}
+
+
+.nav-left,
+.nav-right {
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    gap:
+    25px;
+
+}
+
+
+.nav-left a {
+
+    font-size:
+    11px;
+
+    text-transform:
+    uppercase;
+
+    letter-spacing:
+    2px;
+
+    transition:
+    0.3s;
+
+}
+
+
+.nav-left a:hover {
+
+    color:
+    var(--blue);
+
+}
+
+
+.nav-right {
+
+    font-size:
+    17px;
+
+}
+
+
+.nav-right a {
+
+    transition:
+    0.3s;
+
+}
+
+
+.nav-right a:hover {
+
+    color:
+    var(--blue);
+
+}
+
+
+.logo {
+
+    width:
+    260px;
+
+}
+
+
+.logo img {
+
+    object-fit:
+    contain;
+
+    max-height:
+    75px;
+
+}
+
+
+/* ================================= */
+/* MOBILE MENU */
+/* ================================= */
+
+.menu-btn {
+
+    display:
+    none;
+
+    background:
+    none;
+
+    border:
+    none;
+
+    color:
+    white;
+
+    font-size:
+    24px;
+
+    cursor:
+    pointer;
+
+}
+
+
+.mobile-menu {
+
+    display:
+    none;
+
+    flex-direction:
+    column;
+
+    gap:
+    20px;
+
+    padding:
+    25px;
+
+    background:
+    #050608;
+
+}
+
+
+.mobile-menu a {
+
+    text-transform:
+    uppercase;
+
+    letter-spacing:
+    2px;
+
+    font-size:
+    13px;
+
+}
+
+
+
+/* ================================= */
+/* HERO */
+/* ================================= */
+
+.hero {
+
+    min-height:
+    500px;
+
+    position:
+    relative;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    justify-content:
+    center;
+
+    text-align:
+    center;
+
+    padding:
+    100px 20px;
+
+    background:
+
+    radial-gradient(
+        circle at center,
+        rgba(25, 50, 100, 0.5),
+        transparent 60%
+    ),
+
+    #050608;
+
+}
+
+
+.hero-content {
+
+    max-width:
+    850px;
+
+    position:
+    relative;
+
+    z-index:
+    2;
+
+}
+
+
+.hero-tags {
+
+    display:
+    flex;
+
+    justify-content:
+    center;
+
+    flex-wrap:
+    wrap;
+
+    gap:
+    15px;
+
+    margin-bottom:
+    25px;
+
+    font-size:
+    13px;
+
+    letter-spacing:
+    5px;
+
+}
+
+
+.hero p {
+
+    font-size:
+    16px;
+
+    line-height:
+    1.8;
+
+    color:
+    #d1d1d1;
+
+}
+
+
+.hero h2 {
+
+    margin-top:
+    30px;
+
+    font-size:
+    28px;
+
+    font-style:
+    italic;
+
+    letter-spacing:
+    2px;
+
+    color:
+    #ffffff;
+
+}
+
+
+
+/* ================================= */
+/* ARTISTS */
+/* ================================= */
+
+.artists {
+
+    max-width:
+    1400px;
+
+    margin:
+    auto;
+
+    padding:
+    0 40px;
+
+}
+
+
+.artist-section {
+
+    display:
+    grid;
+
+    grid-template-columns:
+
+    1fr
+    1fr
+    1.5fr;
+
+    gap:
+    40px;
+
+    align-items:
+    center;
+
+    padding:
+    70px 0;
+
+    border-top:
+    1px solid
+    rgba(45, 108, 255, 0.4);
+
+}
+
+
+.artist-photo {
+
+    align-self:
+    end;
+
+}
+
+
+.artist-photo img {
+
+    max-height:
+    500px;
+
+    object-fit:
+    contain;
+
+    object-position:
+    bottom;
+
+}
+
+
+.artist-info {
+
+    max-width:
+    330px;
+
+}
+
+
+.artist-label {
+
+    font-size:
+    12px;
+
+    letter-spacing:
+    4px;
+
+    color:
+    #cfcfcf;
+
+}
+
+
+.artist-info h2 {
+
+    margin:
+    10px 0 20px;
+
+    font-size:
+    55px;
+
+    font-style:
+    italic;
+
+    letter-spacing:
+    2px;
+
+}
+
+
+.crown {
+
+    color:
+    var(--blue);
+
+    font-size:
+    25px;
+
+}
+
+
+.artist-info p {
+
+    color:
+    #c9c9c9;
+
+    line-height:
+    1.7;
+
+    font-size:
+    15px;
+
+    margin-bottom:
+    25px;
+
+}
+
+
+.artist-button {
+
+    display:
+    inline-flex;
+
+    align-items:
+    center;
+
+    gap:
+    12px;
+
+    border:
+    1px solid
+    var(--blue);
+
+    padding:
+    12px 25px;
+
+    border-radius:
+    30px;
+
+    font-size:
+    11px;
+
+    letter-spacing:
+    2px;
+
+    transition:
+    0.3s;
+
+}
+
+
+.artist-button:hover {
+
+    background:
+    var(--blue);
+
+    color:
+    white;
+
+    box-shadow:
+    0 0 20px
+    rgba(45, 108, 255, 0.6);
+
+}
+
+
+/* ================================= */
+/* GALLERY */
+/* ================================= */
+
+.artist-gallery {
+
+    display:
+    grid;
+
+    grid-template-columns:
+    repeat(3, 1fr);
+
+    gap:
+    10px;
+
+}
+
+
+.gallery-item {
+
+    position:
+    relative;
+
+    overflow:
+    hidden;
+
+    border:
+    1px solid
+    rgba(255,255,255,0.1);
+
+    background:
+    #0b0e13;
+
+}
+
+
+.gallery-item img {
+
+    height:
+    220px;
+
+    object-fit:
+    cover;
+
+    transition:
+    0.5s;
+
+}
+
+
+.gallery-item:hover img {
+
+    transform:
+    scale(1.08);
+
+}
+
+
+.gallery-item span {
+
+    display:
+    block;
+
+    padding:
+    10px;
+
+    text-align:
+    center;
+
+    background:
+    rgba(15, 25, 40, 0.95);
+
+    font-size:
+    9px;
+
+    letter-spacing:
+    2px;
+
+}
+
+
+
+/* ================================= */
+/* PIERCING */
+/* ================================= */
+
+.piercing {
+
+    max-width:
+    1400px;
+
+    margin:
+    auto;
+
+    padding:
+    80px 40px;
+
+    display:
+    grid;
+
+    grid-template-columns:
+
+    1fr
+    1fr
+    1fr;
+
+    gap:
+    40px;
+
+    align-items:
+    center;
+
+    border-top:
+    1px solid
+    rgba(45, 108, 255, 0.4);
+
+}
+
+
+.piercing-image img {
+
+    height:
+    300px;
+
+    object-fit:
+    cover;
+
+}
+
+
+.piercing-content {
+
+    text-align:
+    center;
+
+}
+
+
+.piercing-content span {
+
+    font-size:
+    10px;
+
+    letter-spacing:
+    3px;
+
+    color:
+    #aaa;
+
+}
+
+
+.piercing-content h2 {
+
+    font-family:
+    Georgia,
+    serif;
+
+    font-size:
+    55px;
+
+    letter-spacing:
+    10px;
+
+    margin:
+    15px 0;
+
+}
+
+
+.piercing-content p {
+
+    color:
+    #bbb;
+
+    margin-bottom:
+    25px;
+
+}
+
+
+.piercing-gallery {
+
+    display:
+    grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:
+    10px;
+
+}
+
+
+.piercing-gallery img {
+
+    height:
+    300px;
+
+    object-fit:
+    cover;
+
+}
+
+
+
+/* ================================= */
+/* BENEFITS */
+/* ================================= */
+
+.benefits {
+
+    max-width:
+    1400px;
+
+    margin:
+    auto;
+
+    padding:
+    60px 40px;
+
+    display:
+    grid;
+
+    grid-template-columns:
+    repeat(5, 1fr);
+
+    gap:
+    20px;
+
+    border-top:
+    1px solid
+    rgba(45,108,255,0.4);
+
+    border-bottom:
+    1px solid
+    rgba(45,108,255,0.4);
+
+}
+
+
+.benefit {
+
+    display:
+    flex;
+
+    flex-direction:
+    column;
+
+    align-items:
+    center;
+
+    text-align:
+    center;
+
+    gap:
+    15px;
+
+}
+
+
+.benefit i {
+
+    color:
+    var(--blue);
+
+    font-size:
+    28px;
+
+}
+
+
+.benefit span {
+
+    font-size:
+    10px;
+
+    letter-spacing:
+    2px;
+
+    line-height:
+    1.6;
+
+}
+
+
+
+/* ================================= */
+/* CONTACT */
+/* ================================= */
+
+.contact {
+
+    max-width:
+    1400px;
+
+    margin:
+    auto;
+
+    padding:
+    80px 40px;
+
+    display:
+    grid;
+
+    grid-template-columns:
+
+    1fr
+    2fr
+    1fr;
+
+    gap:
+    40px;
+
+    align-items:
+    center;
+
+}
+
+
+.contact-info h2 {
+
+    font-size:
+    35px;
+
+    font-style:
+    italic;
+
+    margin-bottom:
+    30px;
+
+}
+
+
+.contact-info p {
+
+    color:
+    #cfcfcf;
+
+    line-height:
+    1.8;
+
+    margin-bottom:
+    20px;
+
+    font-size:
+    14px;
+
+}
+
+
+.contact-info i {
+
+    color:
+    var(--blue);
+
+    margin-right:
+    10px;
+
+}
+
+
+.map iframe {
+
+    width:
+    100%;
+
+    height:
+    300px;
+
+    border:
+    none;
+
+    filter:
+    grayscale(1)
+    contrast(1.1);
+
+}
+
+
+.whatsapp-contact {
+
+    text-align:
+    center;
+
+}
+
+
+.whatsapp-contact h2 {
+
+    font-size:
+    25px;
+
+    font-style:
+    italic;
+
+    margin-bottom:
+    30px;
+
+}
+
+
+.whatsapp-button {
+
+    display:
+    inline-flex;
+
+    align-items:
+    center;
+
+    justify-content:
+    center;
+
+    gap:
+    15px;
+
+    padding:
+    15px 25px;
+
+    border:
+    1px solid
+    var(--blue);
+
+    border-radius:
+    30px;
+
+    font-size:
+    11px;
+
+    letter-spacing:
+    2px;
+
+    transition:
+    0.3s;
+
+}
+
+
+.whatsapp-button:hover {
+
+    background:
+    #25d366;
+
+    border-color:
+    #25d366;
+
+}
+
+
+
+/* ================================= */
+/* FOOTER */
+/* ================================= */
+
+.footer {
+
+    border-top:
+    1px solid
+    rgba(45,108,255,0.3);
+
+    padding:
+    40px;
+
+    display:
+    flex;
+
+    justify-content:
+    space-between;
+
+    align-items:
+    center;
+
+    max-width:
+    1400px;
+
+    margin:
+    auto;
+
+}
+
+
+.footer p {
+
+    font-size:
+    10px;
+
+    letter-spacing:
+    3px;
+
+    color:
+    #aaa;
+
+}
+
+
+.footer-links {
+
+    display:
+    flex;
+
+    gap:
+    20px;
+
+}
+
+
+.footer-links a {
+
+    font-size:
+    18px;
+
+    transition:
+    0.3s;
+
+}
+
+
+.footer-links a:hover {
+
+    color:
+    var(--blue);
+
+}
+
+
+
+/* ================================= */
+/* WHATSAPP FLOATING */
+/* ================================= */
+
+.floating-whatsapp {
+
+    position:
+    fixed;
+
+    right:
+    25px;
+
+    bottom:
+    25px;
+
+    width:
+    55px;
+
+    height:
+    55px;
+
+    display:
+    flex;
+
+    align-items:
+    center;
+
+    justify-content:
+    center;
+
+    border-radius:
+    50%;
+
+    background:
+    #25d366;
+
+    color:
+    white;
+
+    font-size:
+    28px;
+
+    z-index:
+    1000;
+
+    box-shadow:
+    0 5px 25px
+    rgba(0,0,0,0.5);
+
+}
+
+
+
+/* ================================= */
+/* TABLET */
+/* ================================= */
+
+@media
+(max-width: 1000px) {
+
+
+    .artist-section {
+
+        grid-template-columns:
+
+        1fr
+        1fr;
+
+    }
+
+
+    .artist-gallery {
+
+        grid-column:
+        span 2;
+
+    }
+
+
+    .piercing {
+
+        grid-template-columns:
+
+        1fr
+        1fr;
+
+    }
+
+
+    .piercing-gallery {
+
+        grid-column:
+        span 2;
+
+    }
+
+
+    .benefits {
+
+        grid-template-columns:
+        repeat(3, 1fr);
+
+    }
+
+
+    .contact {
+
+        grid-template-columns:
+        1fr;
+
+        text-align:
+        center;
+
+    }
+
+
+}
+
+
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media
+(max-width: 768px) {
+
+
+    .navbar {
+
+        min-height:
+        70px;
+
+        padding:
+        10px 20px;
+
+    }
+
+
+    .nav-left {
+
+        display:
+        none;
+
+    }
+
+
+    .nav-right {
+
+        gap:
+        15px;
+
+        margin-left:
+        auto;
+
+    }
+
+
+    .logo {
+
+        width:
+        170px;
+
+        order:
+        2;
+
+    }
+
+
+    .menu-btn {
+
+        display:
+        block;
+
+        order:
+        1;
+
+    }
+
+
+    .nav-right {
+
+        order:
+        3;
+
+    }
+
+
+    .mobile-menu.active {
+
+        display:
+        flex;
+
+    }
+
+
+    /* HERO */
+
+
+    .hero {
+
+        min-height:
+        480px;
+
+        padding:
+        70px 20px;
+
+    }
+
+
+    .hero-tags {
+
+        font-size:
+        10px;
+
+        letter-spacing:
+        2px;
+
+        gap:
+        10px;
+
+    }
+
+
+    .hero p {
+
+        font-size:
+        14px;
+
+        line-height:
+        1.7;
+
+    }
+
+
+    .hero h2 {
+
+        font-size:
+        20px;
+
+    }
+
+
+    /* ARTISTS */
+
+
+    .artists {
+
+        padding:
+        0 15px;
+
+    }
+
+
+    .artist-section {
+
+        grid-template-columns:
+        1fr;
+
+        gap:
+        25px;
+
+        padding:
+        50px 0;
+
+    }
+
+
+    .artist-photo {
+
+        display:
+        flex;
+
+        justify-content:
+        center;
+
+    }
+
+
+    .artist-photo img {
+
+        max-width:
+        320px;
+
+        max-height:
+        400px;
+
+    }
+
+
+    .artist-info {
+
+        max-width:
+        100%;
+
+        padding:
+        0 10px;
+
+    }
+
+
+    .artist-info h2 {
+
+        font-size:
+        42px;
+
+    }
+
+
+    .artist-gallery {
+
+        grid-column:
+        auto;
+
+        grid-template-columns:
+        repeat(3, 1fr);
+
+        gap:
+        6px;
+
+    }
+
+
+    .gallery-item img {
+
+        height:
+        130px;
+
+    }
+
+
+    .gallery-item span {
+
+        font-size:
+        7px;
+
+        letter-spacing:
+        1px;
+
+        padding:
+        8px 3px;
+
+    }
+
+
+    /* PIERCING */
+
+
+    .piercing {
+
+        grid-template-columns:
+        1fr;
+
+        padding:
+        50px 15px;
+
+    }
+
+
+    .piercing-image img {
+
+        height:
+        250px;
+
+    }
+
+
+    .piercing-content h2 {
+
+        font-size:
+        38px;
+
+    }
+
+
+    .piercing-gallery {
+
+        grid-column:
+        auto;
+
+    }
+
+
+    .piercing-gallery img {
+
+        height:
+        220px;
+
+    }
+
+
+    /* BENEFITS */
+
+
+    .benefits {
+
+        grid-template-columns:
+        repeat(2, 1fr);
+
+        padding:
+        40px 20px;
+
+        gap:
+        35px;
+
+    }
+
+
+    .benefit:last-child {
+
+        grid-column:
+        span 2;
+
+    }
+
+
+    /* CONTACT */
+
+
+    .contact {
+
+        padding:
+        50px 20px;
+
+        gap:
+        40px;
+
+    }
+
+
+    .map iframe {
+
+        height:
+        250px;
+
+    }
+
+
+    /* FOOTER */
+
+
+    .footer {
+
+        padding:
+        30px 20px;
+
+        flex-direction:
+        column;
+
+        gap:
+        25px;
+
+        text-align:
+        center;
+
+    }
+
+
+    .floating-whatsapp {
+
+        width:
+        50px;
+
+        height:
+        50px;
+
+        right:
+        15px;
+
+        bottom:
+        15px;
+
+    }
+
+
+}
+/* ================================= */
+/* PANTALLA DE ACCESO */
+/* ================================= */
+
+.music-gate {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100vh;
+
+    background: rgba(5, 6, 8, 0.98);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 99999;
+
+    padding: 20px;
+
+}
+
+
+.music-gate-content {
+
+    max-width: 550px;
+
+    text-align: center;
+
+    padding: 50px 30px;
+
+    border: 1px solid rgba(45, 108, 255, 0.6);
+
+    background: #080b10;
+
+    box-shadow:
+    0 0 50px
+    rgba(45, 108, 255, 0.15);
+
+}
+
+
+.music-gate-content h2 {
+
+    font-size: 32px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.music-gate-content p {
+
+    color: #bdbdbd;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+}
+
+
+.music-notice {
+
+    color: #ffffff !important;
+
+    font-size: 14px;
+
+}
+
+
+#enterSite {
+
+    margin-top: 25px;
+
+    padding: 15px 35px;
+
+    background: transparent;
+
+    border: 1px solid #2d6cff;
+
+    color: white;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+#enterSite:hover {
+
+    background: #2d6cff;
+
+    box-shadow:
+    0 0 25px
+    rgba(45, 108, 255, 0.5);
+
+}
+
+
+/* ================================= */
+/* BOTÓN MÚSICA */
+/* ================================= */
+
+.music-control {
+
+    position: fixed;
+
+    left: 25px;
+
+    bottom: 25px;
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: 1px solid #2d6cff;
+
+    background: #080b10;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 0.3s;
+
+}
+
+
+.music-control:hover {
+
+    background: #2d6cff;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .music-gate-content {
+
+        padding: 40px 20px;
+
+    }
+
+    .music-gate-content h2 {
+
+        font-size: 24px;
+
+    }
+
+    .music-control {
+
+        left: 15px;
+
+        bottom: 15px;
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+}
