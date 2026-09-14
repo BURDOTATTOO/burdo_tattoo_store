@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Burdo Tattoo Collective</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+    <!-- ICONOS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+<!-- PANTALLA DE ACCESO + MÚSICA -->
+<div id="musicGate" class="music-gate">
+    <div class="music-gate-content">
+
+        <h2>BURDO TATTOO COLECTIVE</h2>
+
+        <p>
+            Al ingresar confirmas que eres mayor de edad y aceptas
+            las condiciones de uso del sitio.
+        </p>
+
+        <p class="music-notice">
+            🎵 Esta experiencia incluye música. Podrás silenciarla
+            o pausarla en cualquier momento.
+        </p>
+
+        <button id="enterSite">
+            ACEPTAR Y ENTRAR
+        </button>
+
+    </div>
+</div>
+
+
+<!-- AUDIO -->
+<audio id="siteMusic" loop>
+    <source src="images/audio/Audio Soul Project  Distractions.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+</audio>
+
+
+<!-- BOTÓN CONTROL MÚSICA -->
+<button id="musicControl" class="music-control" aria-label="Controlar música">
+    <i class="fa-solid fa-volume-high"></i>
+</button>
+
+<!-- ========================= -->
+<!-- MENU -->
+<!-- ========================= -->
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <div class="nav-left">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#artistas">Artistas</a>
+            <a href="#piercing">Piercing</a>
+
+        </div>
+
+
+        <div class="logo">
+
+            <img
+                src="/images/icono.ico"
+                alt="Burdo Tattoo Collective"
+            >
+
+        </div>
+
+
+        <div class="nav-right">
+
+            <a
+                href="https://www.instagram.com/burdo_tattoo/"
+                target="_blank"
+                aria-label="Instagram"
+            >
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+
+            <a
+                href="https://api.whatsapp.com/send?phone=573017548772&text=HOLA!!%20Quiero%20realizar%20una%20compra%20con%20ustedes%20de%20su%20pagina%20%F0%9F%92%89%F0%9F%92%89%F0%9F%92%89"
+                target="_blank"
+                aria-label="WhatsApp"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+
+            <a href="https://maps.app.goo.gl/X6cFvfiM6TkhcBxy8">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+            </a>
+
+        </div>
+
+
+        <!-- BOTON MOBILE -->
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+        >
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+    </nav>
+
+
+    <!-- MENU MOBILE -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu"
+    >
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#artistas">Artistas</a>
+
+        <a href="#piercing">Piercing</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </div>
+
+
+</header>
+
+
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<section
+    class="hero"
+    id="inicio"
+>
+
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+
+        <div class="hero-tags">
+
+            <span>TATTOO STUDIO</span>
+
+            <span>•</span>
+
+            <span>ARTISTAS</span>
+
+            <span>•</span>
+
+            <span>PASIÓN</span>
+
+            <span>•</span>
+
+            <span>CULTURA</span>
+
+        </div>
+
+
+        <p>
+
+            En Burdo Tattoo Studio desde 2016, nos especializamos
+            en diferentes estilos de tatuaje y modificación corporal.
+
+            Nuestro equipo de artistas trabaja con creatividad,
+            técnica y compromiso para ofrecer una experiencia
+            profesional y segura.
+
+        </p>
+
+
+        <h2>
+            ¡TU IDEA, NUESTRO ARTE!
+        </h2>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- ARTISTAS -->
+<!-- ========================= -->
+
+<section
+    class="artists"
+    id="artistas"
+>
+
+
+
+<!-- ========================= -->
+<!-- ARTISTA BURDO -->
+<!-- ========================= -->
+
+<article class="artist-section">
+
+
+    <div class="artist-photo">
+
+        <img
+            src="images/CAT_ARTIST/MIGUEL_ANGEL_TATTOO.png"
+            alt="Artista Miguel Ángel"
+        >
+
+    </div>
+
+
+
+    <div class="artist-info">
+
+
+        <span class="artist-label">
+
+            ARTISTA
+
+        </span>
+
+
+        <h2>
+
+              Miguel Ángel
+
+            <span class="crown">
+                ♛
+            </span>
+
+        </h2>
+
+
+        <p>
+
+             Su trabajo se destaca por el color,
+            la creatividad y la expresión artística.
+
+            Cada pieza busca transmitir una identidad
+            propia y una historia única.
+
+        </p>
+
+
+        <a
+            href="https://api.whatsapp.com/send?phone=573017548772&text=Hola!!!%20Quiero%20realizar%20una%20cotizacion%20Con%20MIGUEL%20ANGEL!!!%20de%20una%20perforacion%20%E2%98%BA%EF%B8%8F%E2%98%BA%EF%B8%8F"
+            class="artist-button"
+        >
+
+            COTIZACION
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+    </div>
+
+
+
+    <div class="artist-gallery">
+
+
+        <div class="gallery-item">
+
+            <img
+                src="images/COLIBRI.jpg"
+                alt="Trabajo Blackwork"
+            >
+
+            <span>
+                COTIZACION
+            </span>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="images/FLORESTOBILLO.jpg"
+                alt="Trabajo Neotradicional"
+            >
+
+            <span>
+                  COTIZACION
+            </span> 
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="images/PANTERA.jpg"
+                alt="Trabajo Tattoo"
+            >
+
+            <span>
+                COTIZACION
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</article>
+
+
+
+
+<!-- ========================= -->
+<!-- ARTISTA ANDRES -->
+<!-- ========================= -->
+
+<article class="artist-section reverse">
+
+
+
+    <div class="artist-photo">
+
+        <img
+            src="images/CAT_ARTIST/ANDRES_PIERCING.png"
+            alt="Artista Andres"
+        >
+
+    </div>
+
+
+
+    <div class="artist-info">
+
+
+        <span class="artist-label">
+
+            ARTISTA
+
+        </span>
+
+
+        <h2>
+
+            Andres
+
+            <span class="crown">
+                ♛
+            </span>
+
+        </h2>
+
+
+        <p>
+
+            Su trabajo se destaca por la precisión,
+la experiencia y la calidad en cada perforación.
+
+Cada pieza busca brindar seguridad,
+confianza y un resultado impecable.
+
+        </p>
+
+
+        <a
+            href="https://api.whatsapp.com/send?phone=573017548772&text=Hola!!!%20Quiero%20realizar%20una%20cotizacion%20Con%20Andres!!!%20de%20una%20perforacion%20%E2%98%BA%EF%B8%8F%E2%98%BA%EF%B8%8F"
+            class="artist-button"
+        >
+
+            COTIZACION
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+    </div>
+
+
+
+    <div class="artist-gallery">
+
+
+        <div class="gallery-item">
+
+            <img
+                src="images/CAT_ARTIST/ANDRES_PIERCING_1.png"
+                alt="Tattoo Color"
+            >
+
+            <span>
+                COTIZACION
+            </span>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="images/CAT_ARTIST/ANDRES_PIERCING_2.png"
+                alt="Tattoo piercing"
+            >
+
+            <span>
+                COTIZACION
+            </span>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="images/CAT_ARTIST/ANDRES_PIERCING_3.png"
+                alt="Tattoo Creativo"
+            >
+
+            <span>
+                COTIZACION
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</article>
+
+
+
+
+<!-- ========================= -->
+<!-- ARTISTA MARIO -->
+<!-- ========================= -->
+
+<article class="artist-section">
+
+
+    <div class="artist-photo">
+
+        <img
+            src="images/CAT_ARTIST/MARIO_tattoo.png"
+            alt="Artista MARIO"
+        >
+
+    </div>
+
+
+
+    <div class="artist-info">
+
+
+        <span class="artist-label">
+
+            ARTISTA
+
+        </span>
+
+
+        <h2>
+
+            MARIO
+
+            <span class="crown">
+                ♛
+            </span>
+
+        </h2>
+
+
+        <p>
+
+            Tradición japonesa, color y lettering en cada pieza.
+
+Su estilo combina el carácter del japonés tradicional
+con la fuerza del neotradicional y la expresión tipográfica
+
+        </p>
+
+
+        <a
+            href="https://api.whatsapp.com/send?phone=573017548772&text=HOLA!!!%20Quiero%20realizar%20una%20cotizacion%20con%20Mario%20para%20un%20tatuaje!!!%E2%98%BA%EF%B8%8F%E2%98%BA%EF%B8%8F"
+            class="artist-button"
+        >
+
+            COTIZACION
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+    </div>
+
+
+
+    <div class="artist-gallery">
+
+
+        <div class="gallery-item">
+
+            <img
+                src="images/CAT_ARTIST/MARIO_tattoo_1.jpg"
+                alt="Trabajo Realismo"
+            >
+
+            <span>
+                COTIZACION
+            </span>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="images/CAT_ARTIST/MARIO_tattoo_2.jpg"
+                alt="Trabajo Portrait"
+            >
+
+            <span>
+                COTIZACION
+            </span>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="images/CAT_ARTIST/MARIO_tattoo_3.jpg"
+                alt="Trabajo Detalle"
+            >
+
+            <span>
+                COTIZACION
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</article>
+
+
+</section>
+
+
+
+
+<!-- ========================= -->
+<!-- PIERCING MARIANA-->
+<!-- ========================= -->
+
+<section
+    class="piercing"
+    id="piercing"
+>
+
+
+    <div class="piercing-image">
+
+        <img
+            src="images/CAT_ARTIST/MARIANA_PIERCING.png"
+            alt="Piercing"
+        >
+
+    </div>
+
+
+    <div class="piercing-content">
+
+
+        <span>
+            PIERCING Y MAQUILLAJE
+        </span>
+
+
+        <h2>
+
+            MARIANA CANO
+
+        </h2>
+
+
+        <p>
+
+            La técnica, la joya y el cuidado
+            hacen el resultado perfecto.
+
+        </p>
+
+
+        <a
+            href="https://api.whatsapp.com/send?phone=573017548772&text=Hola!!!%20Quiero%20realizar%20una%20cotizacion%20para%20una%20PERFORACION%20con%20Mariana!!!%20%E2%98%BA%EF%B8%8F%E2%98%BA%EF%B8%8F%E2%98%BA%EF%B8%8F"
+            class="artist-button"
+        >
+
+            COTIZACION
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+    </div>
+
+
+
+    <div class="piercing-gallery">
+
+
+        <img
+            src="images/CAT_ARTIST/MARIANA_PIERCING_1.png"
+            alt="Piercing"
+        >
+
+
+        <img
+            src="images/CAT_ARTIST/MARIANA_PIERCING_2.png"
+            alt="Piercing"
+        >
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ========================= -->
+<!-- BENEFICIOS -->
+<!-- ========================= -->
+
+<section class="benefits">
+
+
+    <div class="benefit">
+
+        <i class="fa-regular fa-gem"></i>
+
+        <span>
+            DISEÑOS
+            <br>
+            PERSONALIZADOS
+        </span>
+
+    </div>
+
+
+
+    <div class="benefit">
+
+        <i class="fa-solid fa-shield-halved"></i>
+
+        <span>
+            MATERIALES
+            <br>
+            DE ALTA CALIDAD
+        </span>
+
+    </div>
+
+
+
+    <div class="benefit">
+
+        <i class="fa-solid fa-user-shield"></i>
+
+        <span>
+            ESTÉRIL
+            <br>
+            Y SEGURO
+        </span>
+
+    </div>
+
+
+
+    <div class="benefit">
+
+        <i class="fa-solid fa-users"></i>
+
+        <span>
+            ARTISTAS
+            <br>
+            PROFESIONALES
+        </span>
+
+    </div>
+
+
+
+    <div class="benefit">
+
+        <i class="fa-regular fa-heart"></i>
+
+        <span>
+            TU SATISFACCIÓN
+            <br>
+            ES NUESTRA PRIORIDAD
+        </span>
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ========================= -->
+<!-- CONTACTO -->
+<!-- ========================= -->
+
+<section
+    class="contact"
+    id="contacto"
+>
+
+
+    <div class="contact-info">
+
+
+        <h2>
+
+            AGENDA TU CITA
+
+        </h2>
+
+
+        <p>
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            Calle 55 # 1a - 36
+            <br>
+
+            Medellín, Antioquia
+
+        </p>
+
+
+        <p>
+
+            <i class="fa-regular fa-clock"></i>
+
+            Lun - Sáb:
+            12:00 a.m. - 12:00 p.m.
+
+            <br>
+
+            Dom:
+            Previa cita
+
+        </p>
+
+
+    </div>
+
+
+
+    <!-- MAPA -->
+
+    <div class="map">
+
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.8334110337455!2d-75.58854802355653!3d6.208640102277402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44294eab452b7f%3A0xf417151cb4261332!2sBurdo%20tattoo%20Medellin!5e0!3m2!1ses!2sco!4v1789359899329!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+
+    </div>
+
+
+
+    <div class="whatsapp-contact">
+
+
+        <h2>
+
+            ESCRÍBENOS
+            <br>
+
+            POR WHATSAPP
+
+        </h2>
+
+
+        <a
+            href="https://api.whatsapp.com/send?phone=573017548772&text=HOLA!!%20Quiero%20realizar%20una%20compra%20con%20ustedes%20de%20su%20pagina%20%F0%9F%92%89%F0%9F%92%89%F0%9F%92%89"
+            target="_blank"
+            class="whatsapp-button"
+        >
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            CONTACTO
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer class="footer">
+
+
+    <p>
+
+        BURDO TATTOO COLECTIVE
+
+    </p>
+
+
+    <div class="footer-links">
+
+        <a href="https://www.instagram.com/burdo_tattoo/">
+
+            <i class="fa-brands fa-instagram"></i>
+
+        </a>
+
+
+        <a href="https://api.whatsapp.com/send?phone=573017548772&text=HOLA!!%20Quiero%20realizar%20una%20compra%20con%20ustedes%20de%20su%20pagina%20%F0%9F%92%89%F0%9F%92%89%F0%9F%92%89">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+        </a>
+
+
+        <a href="https://maps.app.goo.gl/9CSUfBB6NiLMAbqN6">
+
+            <i class="fa-solid fa-location-dot">
+
+
+            </i>
+
+        </a>
+
+
+    </div>
+
+
+</footer>
+
+
+
+
+<!-- BOTON WHATSAPP FLOTANTE -->
+
+<a
+    href="https://api.whatsapp.com/send?phone=573017548772&text=HOLA!!%20Quiero%20realizar%20una%20compra%20con%20ustedes%20de%20su%20pagina%20%F0%9F%92%89%F0%9F%92%89%F0%9F%92%89"
+    target="_blank"
+    class="floating-whatsapp"
+>
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+
+<script src="/js/script.js"></script>
+
+
+</body>
+
+</html>
