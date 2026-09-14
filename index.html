@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<head>
+
+    
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-83X12E349M"></script>
-<head>
-<link rel="icon" type="image/png" href="images/icono.ico">
+
+  <link rel="icon" type="image/png" href="images/icono.ico">
     <meta charset="UTF-8">
 
     <meta
@@ -29,6 +32,69 @@
 
 
 <body>
+
+<div id="modalPago" class="modalmask">
+
+    <div class="modalbox-pago">
+
+        <a href="#close" class="close-pago">×</a>
+
+        <div class="pago-contenido">
+
+            <h2>REALIZA TU PAGO</h2>
+
+            <p class="pago-descripcion">
+                Realiza aquí el pago de tu reserva de cita.
+            </p>
+
+           <center><iframe style="margin-top: 3%;" src="https://mmunoz1270667.epayco.me" width="320px" height="483px" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe></center>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div id="modal2" class="modalmask">
+
+    <div class="modalbox rotate">
+
+        <a href="#close" title="Cerrar" class="close">×</a>
+
+        <div class="formulario-header">
+
+            <h2>AGENDA TU CITA</h2>
+
+            <p>
+                Completa el formulario y cuéntanos qué proyecto quieres realizar.
+            </p>
+
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSf0Baz5DW_J0i6vqUKTS0r5ERqlITyM4xOmOQD2-QB2jC8c9Q/viewform?embedded=true"
+                width="100%"
+                height="500"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0">
+                Cargando…
+            </iframe>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+    
 <!-- PANTALLA DE ACCESO + MÚSICA -->
 <div id="musicGate" class="music-gate">
     <div class="music-gate-content">
@@ -37,7 +103,7 @@
 
         <p>
             Al ingresar confirmas que eres mayor de edad y aceptas
-            las condiciones de uso del sitio!
+            las condiciones de uso del sitio.
         </p>
 
         <p class="music-notice">
@@ -78,19 +144,18 @@
             <a href="#inicio">Inicio</a>
             <a href="#artistas">Artistas</a>
             <a href="#piercing">Piercing</a>
+            <a href="#modal2" class="btn-header-agenda">
+    FORMULARIO
+</a>
 
+    <a href="#modalPago" class="btn-header-pago">
+    PASARELA DE PAGO
+</a>
         </div>
 
+    
 
-        <div class="logo">
-
-            <img
-                src="/images/icono.ico"
-                alt="Burdo Tattoo Collective"
-            >
-
-        </div>
-
+       
 
         <div class="nav-right">
 
@@ -151,6 +216,15 @@
 
         <a href="#contacto">Contacto</a>
 
+        <a href="#modal2" class="btn-header-agenda">
+    FORMULARIO
+</a>
+
+    <a href="#modalPago" class="btn-header-pago">
+    PASARELA DE PAGO
+</a>
+       
+
     </div>
 
 
@@ -173,6 +247,14 @@
 
     <div class="hero-content">
 
+<center> <div class="logo">
+
+            <img
+                src="/images/icono.ico"
+                alt="Burdo Tattoo Collective"
+            >
+
+        </div></center>
 
         <div class="hero-tags">
 
@@ -507,7 +589,7 @@ confianza y un resultado impecable.
 
         <p>
 
-            Tradición japones, color y lettering en cada pieza.
+            Tradición japonesa, color y lettering en cada pieza.
 
 Su estilo combina el carácter del japonés tradicional
 con la fuerza del neotradicional y la expresión tipográfica
@@ -845,8 +927,8 @@ con la fuerza del neotradicional y la expresión tipográfica
 
 </section>
 
-
 <center><iframe src="https://burdotattoostore.wordpress.com/" frameborder="0" style="width: 80%; height: 500px;"></iframe></center>
+
 
 <!-- ========================= -->
 <!-- FOOTER -->
