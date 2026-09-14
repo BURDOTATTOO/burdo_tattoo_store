@@ -231,7 +231,7 @@ a {
     contain;
 
     max-height:
-    75px;
+    95px;
 
 }
 
@@ -354,6 +354,8 @@ a {
 
 .hero-tags {
 
+    margin-top:
+    25px;
     display:
     flex;
 
@@ -1785,4 +1787,248 @@ a {
 
     }
 
+}
+
+.btn-header-agenda {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-header-agenda:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+
+
+.modalmask {
+    position: fixed;
+    inset: 0;
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.88);
+    z-index: 99999;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 400ms ease-in;
+}
+
+.modalmask:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.modalbox {
+    width: min(90%, 500px);
+    max-height: 90vh;
+    overflow-y: auto;
+
+    position: relative;
+    margin: 5vh auto;
+
+    padding: 25px;
+
+    background: #fff;
+    border-radius: 4px;
+
+    transform: scale(0.7) rotate(-5deg);
+
+    transition: all 500ms ease;
+}
+
+
+.modalmask:target .modalbox {
+    transform: scale(1) rotate(0deg);
+}
+
+
+.close {
+    background: #111;
+    color: #fff;
+
+    line-height: 30px;
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    border-radius: 50%;
+
+    z-index: 10;
+
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    background: #c00;
+    color: #fff;
+}
+
+
+.formulario-header {
+    padding-top: 10px;
+}
+
+.formulario-header h2 {
+    margin: 0 0 8px;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.formulario-header p {
+    margin: 0 0 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+
+.formulario-header iframe {
+    display: block;
+    width: 100%;
+    min-height: 500px;
+    border: 0;
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+    .btn-header-agenda {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .modalbox {
+        width: 92%;
+        margin: 3vh auto;
+        padding: 20px 12px;
+        max-height: 94vh;
+    }
+
+    .formulario-header h2 {
+        font-size: 21px;
+    }
+
+    .formulario-header iframe {
+        min-height: 520px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.modalmask {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    z-index: 99999;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 400ms ease;
+}
+
+.modalmask:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.modalbox-pago {
+    position: relative;
+
+    width: min(92%, 480px);
+    max-height: 90vh;
+    overflow-y: auto;
+
+    margin: 5vh auto;
+    padding: 30px 25px;
+
+    background: #fff;
+    border-radius: 6px;
+
+    transform: scale(0.7);
+    transition: transform 400ms ease;
+}
+
+.modalmask:target .modalbox-pago {
+    transform: scale(1);
+}
+
+
+.close-pago {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #111;
+    color: #fff;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    z-index: 20;
+}
+
+.close-pago:hover {
+    background: #c00;
+}
+
+
+.pago-contenido {
+    padding-top: 10px;
+}
+
+.pago-contenido h2 {
+    margin: 0 0 8px;
+    text-align: center;
+
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.pago-descripcion {
+    margin-bottom: 25px;
+    text-align: center;
+
+    color: #555;
+    font-size: 14px;
 }
