@@ -2032,3 +2032,201 @@ a {
     color: #555;
     font-size: 14px;
 }
+
+
+
+
+
+.artist-photo-link {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.artist-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.artist-photo-link:hover .artist-photo {
+    transform: scale(1.02);
+    filter: brightness(0.75);
+}
+
+
+.artist-profile {
+    position: relative;
+    width: min(92vw, 700px);
+    max-height: 90vh;
+    overflow-y: auto;
+
+    margin: 5vh auto;
+    padding: 0;
+
+    background: #111;
+    color: #fff;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow: 0 25px 80px rgba(0,0,0,0.7);
+
+    transform: scale(0.75);
+    transition: transform 500ms ease;
+}
+
+.modalmask:target .artist-profile {
+    transform: scale(1);
+}
+
+
+/* ENCABEZADO */
+
+.artist-profile-header {
+    position: relative;
+    min-height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.72),
+            rgba(0,0,0,0.82)
+        ),
+        url("images/background.jpg") center/cover;
+
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+
+/* LOGO */
+
+.artist-profile-logo {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+
+    width: 100px;
+    height: auto;
+}
+
+
+/* FOTO DEL ARTISTA */
+
+.artist-profile-photo {
+    width: 170px;
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 2px solid #3fa7e4;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,0.6);
+}
+
+
+/* CONTENIDO */
+
+.artist-profile-content {
+    padding: 30px 35px 35px;
+}
+
+.artist-profile-content h2 {
+    margin: 0 0 5px;
+
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.artist-profile-role {
+    margin: 0 0 25px;
+
+    color: #aaa;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.artist-profile-content p {
+    color: #ddd;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* ESPECIALIDADES */
+
+.artist-specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+.artist-specialties span {
+    padding: 7px 12px;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+
+/* CERRAR */
+
+.artist-profile .close {
+    z-index: 20;
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+    .artist-profile {
+        width: 94vw;
+        margin: 3vh auto;
+    }
+
+    .artist-profile-header {
+        min-height: 150px;
+    }
+
+    .artist-profile-logo {
+        width: 75px;
+        left: 15px;
+        top: 15px;
+    }
+
+    .artist-profile-photo {
+        width: 125px;
+        height: 125px;
+    }
+
+    .artist-profile-content {
+        padding: 25px 20px 30px;
+    }
+
+    .artist-profile-content h2 {
+        font-size: 23px;
+    }
+
+    .artist-profile-content p {
+        font-size: 14px;
+    }
+}
