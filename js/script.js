@@ -253,3 +253,118 @@ musicControl.addEventListener(
 
     }
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   BURDO TATTOO COLLECTIVE
+   YOUTUBE / ASESORÍAS
+========================================================= */
+
+
+/* =========================================================
+   AÑO AUTOMÁTICO
+========================================================= */
+
+const currentYear = document.getElementById("currentYear");
+
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
+
+
+/* =========================================================
+   CERRAR MODALES CON ESC
+========================================================= */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+        window.location.hash = "";
+
+    }
+
+});
+
+
+/* =========================================================
+   CERRAR MODAL HACIENDO CLICK FUERA DEL PERFIL
+========================================================= */
+
+document.querySelectorAll(".modalmask").forEach(function(modal) {
+
+    modal.addEventListener("click", function(event) {
+
+        if (event.target === modal) {
+
+            window.location.hash = "";
+
+        }
+
+    });
+
+});
+
+
+/* =========================================================
+   PREPARADO PARA YOUTUBE LIVE
+========================================================= */
+
+/*
+   Cuando tengas un video o transmisión de YouTube puedes
+   reemplazar el contenido de .video-placeholder por:
+
+   <iframe
+       src="https://www.youtube.com/embed/ID_DEL_VIDEO"
+       title="Burdo Tattoo Collective - Live"
+       frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture;
+       web-share"
+       allowfullscreen>
+   </iframe>
+
+*/
+
+
+/* =========================================================
+   EFECTO SUAVE EN TARJETAS
+========================================================= */
+
+const artistCards =
+    document.querySelectorAll(".youtube-artist-card");
+
+artistCards.forEach(function(card) {
+
+    card.addEventListener("mouseenter", function() {
+
+        card.classList.add("is-hovered");
+
+    });
+
+    card.addEventListener("mouseleave", function() {
+
+        card.classList.remove("is-hovered");
+
+    });
+
+});
