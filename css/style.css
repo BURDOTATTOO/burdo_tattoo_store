@@ -3284,3 +3284,279 @@ a {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   VIDEOS YOUTUBE · SANTIAGO SAMA
+====================================================== */
+
+.artist-youtube-section {
+    width: 100%;
+    margin-top: 35px;
+    text-align: center;
+}
+
+
+.artist-youtube-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+
+.artist-youtube-description {
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+
+/* CONTENEDOR RESPONSIVE DEL VIDEO */
+
+.youtube-video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #000;
+}
+
+
+/* IFRAME */
+
+.youtube-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* ESPACIADO DEL BOTÓN */
+
+.artist-youtube-section + .modal-youtube-button {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* =====================================================
+   DISCORD · BURDO TATTOO COLLECTIVE
+====================================================== */
+
+.burdo-discord-section {
+    width: 100%;
+    padding: 90px 20px;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.88),
+            rgba(0, 0, 0, 0.94)
+        ),
+        url("images/Background_burdo_tattoo_medellin.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+.burdo-discord-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ICONO DISCORD */
+
+.burdo-discord-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    font-size: 32px;
+
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+
+.burdo-discord-icon i {
+    color: #ffffff;
+}
+
+
+.burdo-discord-icon:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 30px rgba(255, 255, 255, 0.18);
+}
+
+
+/* ETIQUETA */
+
+.burdo-discord-label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    letter-spacing: 4px;
+
+    opacity: 0.65;
+}
+
+
+/* TITULO */
+
+.burdo-discord-content h2 {
+    margin: 0 0 25px;
+
+    font-size: clamp(30px, 5vw, 52px);
+
+    letter-spacing: 2px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+
+/* TEXTOS */
+
+.burdo-discord-content p {
+    max-width: 720px;
+
+    margin: 0 auto 15px;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+
+    color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* BOTÓN */
+
+.burdo-discord-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+    padding: 15px 30px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    background: rgba(0, 0, 0, 0.55);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.burdo-discord-button i {
+    font-size: 18px;
+}
+
+
+.burdo-discord-button:hover {
+    transform: translateY(-3px);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: #ffffff;
+
+    box-shadow:
+        0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 768px) {
+
+    .burdo-discord-section {
+        padding: 70px 20px;
+
+        background-attachment: scroll;
+    }
+
+
+    .burdo-discord-content h2 {
+        font-size: 30px;
+    }
+
+
+    .burdo-discord-content p {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    .burdo-discord-button {
+        width: 100%;
+        max-width: 320px;
+
+        box-sizing: border-box;
+    }
+
+}
