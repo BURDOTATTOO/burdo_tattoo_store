@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clases y Transmisiones | Burdo Tattoo Collective</title>
+<link rel="icon" href="images/icono.ico">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+/* =========================================================
+   CLASES Y TRANSMISIONES
+   Puedes dejar estos estilos aquí o pasarlos a style.css
+========================================================= */
+.classes-page{
+    min-height:100vh;color:#fff;
+    background:linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.94)),
+               url("images/background.jpg") center/cover fixed;
+}
+.classes-hero{min-height:60vh;display:flex;align-items:center;justify-content:center;
+    text-align:center;padding:110px 25px 70px;position:relative}
+.classes-hero-content{max-width:850px;position:relative;z-index:2}
+.classes-logo{width:95px;height:95px;object-fit:contain;margin-bottom:25px}
+.classes-label,.section-heading>span{display:block;color:#aaa;font-size:11px;
+    letter-spacing:3px;text-transform:uppercase}
+.classes-hero h1{margin:0;font-size:clamp(38px,7vw,74px);letter-spacing:5px}
+.classes-hero h1 span{display:block;color:#aaa;font-size:.38em;letter-spacing:4px;margin-top:18px}
+.classes-hero p,.section-heading p{color:#bbb;line-height:1.8;max-width:700px;margin:28px auto 0}
+.classes-section{max-width:1200px;margin:auto;padding:80px 25px}
+.section-heading{text-align:center;margin-bottom:45px}
+.section-heading h2{margin:10px 0 0;font-size:32px;letter-spacing:3px}
+.schedule-calendar{background:rgba(8,8,8,.88);border:1px solid rgba(255,255,255,.13);
+    box-shadow:0 25px 70px rgba(0,0,0,.45);overflow:hidden}
+.calendar-header,.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr)}
+.calendar-day-name{text-align:center;padding:18px 8px;color:#aaa;font-size:10px;
+    letter-spacing:2px;border-right:1px solid rgba(255,255,255,.08)}
+.calendar-cell{min-height:225px;padding:15px;border-right:1px solid rgba(255,255,255,.08);
+    border-top:1px solid rgba(255,255,255,.08)}
+.calendar-cell:nth-child(7n){border-right:0}
+.calendar-date{display:block;color:#666;font-size:9px;letter-spacing:2px;margin-bottom:14px}
+.calendar-event{display:block;padding:16px 13px;color:#fff;text-decoration:none;
+    background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.14);
+    transition:.3s}
+.calendar-event:hover{transform:translateY(-3px);background:rgba(255,255,255,.10)}
+.event-live{display:block;color:#aaa;font-size:8px;letter-spacing:1.5px;margin-bottom:9px}
+.event-artist{display:block;font-size:14px;font-weight:bold;letter-spacing:1.5px;margin-bottom:7px}
+.event-time{display:block;color:#aaa;font-size:10px;letter-spacing:1px;margin-bottom:10px}
+.event-title{display:block;color:#ddd;font-size:11px;line-height:1.5}
+.event-santiago{border-color:rgba(255,255,255,.4)}
+.event-empty{height:150px;display:flex;align-items:center;justify-content:center;
+    text-align:center;color:#333;font-size:9px;letter-spacing:2px}
+.classes-artists-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.class-artist-card{background:rgba(10,10,10,.9);border:1px solid rgba(255,255,255,.13);
+    overflow:hidden;transition:.3s}
+.class-artist-card:hover{transform:translateY(-6px);border-color:rgba(255,255,255,.3)}
+.class-artist-image{height:270px;position:relative;background:#111}
+.class-artist-image img{width:100%;height:100%;object-fit:cover;display:block}
+.class-artist-status{position:absolute;bottom:12px;left:12px;padding:7px 10px;
+    background:rgba(0,0,0,.78);font-size:8px;letter-spacing:1.5px}
+.class-artist-content{padding:25px}
+.class-location{display:block;color:#888;font-size:9px;letter-spacing:2px;margin-bottom:9px}
+.class-artist-content h3{margin:0 0 13px;font-size:22px;letter-spacing:2px}
+.class-artist-content p{color:#bbb;font-size:13px;line-height:1.65;min-height:70px}
+.class-meta{border-top:1px solid rgba(255,255,255,.1);margin-top:18px;padding-top:17px}
+.class-meta-row{display:flex;justify-content:space-between;gap:12px;margin-bottom:9px;font-size:10px}
+.class-meta-row span:first-child{color:#777;letter-spacing:1px}
+.class-meta-row span:last-child{text-align:right;color:#ddd}
+.class-format{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.format-box{padding:28px 22px;text-align:center;border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.025)}
+.format-box i{font-size:24px;color:#aaa;margin-bottom:15px}
+.format-box h3{font-size:12px;letter-spacing:2px;margin:0 0 9px}
+.format-box p{color:#999;font-size:12px;line-height:1.6;margin:0}
+.classes-back{text-align:center;padding:0 25px 70px}
+.classes-back a{display:inline-block;padding:13px 23px;border:1px solid rgba(255,255,255,.25);
+    color:#fff;text-decoration:none;font-size:10px;letter-spacing:2px}
+.classes-back a:hover{background:#fff;color:#000}
+@media(max-width:950px){
+    .calendar-header,.calendar-grid{grid-template-columns:repeat(2,1fr)}
+    .calendar-day-name{display:none}.calendar-cell{min-height:190px}
+    .classes-artists-grid{grid-template-columns:repeat(2,1fr)}
+    .class-format{grid-template-columns:1fr}
+}
+@media(max-width:650px){
+    .classes-section{padding:60px 15px}.calendar-grid{grid-template-columns:1fr}
+    .calendar-cell{border-right:0;min-height:auto}.classes-artists-grid{grid-template-columns:1fr}
+    .class-artist-image{height:320px}
+}
+</style>
+</head>
+
+<body>
+<div class="classes-page">
+
+<section class="classes-hero">
+<div class="classes-hero-content">
+<img src="images/icono.ico" alt="Burdo Tattoo Collective" class="classes-logo">
+<span class="classes-label">BURDO TATTOO COLLECTIVE</span>
+<h1>CLASES & TRANSMISIONES<span>TATUAJE · EXPERIENCIA · CONOCIMIENTO</span></h1>
+<p>
+Consulta el calendario semanal de transmisiones y conoce qué artista estará
+compartiendo su experiencia, técnica, procesos y conocimientos con la comunidad.
+</p>
+</div>
+</section>
+
+<section class="classes-section">
+<div class="section-heading">
+<span>CALENDARIO SEMANAL</span>
+<h2>HORARIO DE TRANSMISIONES</h2>
+<p>
+Santiago Sama queda fijo todos los martes. Los demás días tienen una
+asignación inicial aleatoria que puedes cambiar directamente en este HTML.
+</p>
+</div>
+
+<div class="schedule-calendar">
+<div class="calendar-header">
+<div class="calendar-day-name">LUNES</div>
+<div class="calendar-day-name">MARTES</div>
+<div class="calendar-day-name">MIÉRCOLES</div>
+<div class="calendar-day-name">JUEVES</div>
+<div class="calendar-day-name">VIERNES</div>
+<div class="calendar-day-name">SÁBADO</div>
+<div class="calendar-day-name">DOMINGO</div>
+</div>
+
+<div class="calendar-grid">
+
+<div class="calendar-cell">
+<span class="calendar-date">DÍA 01</span>
+<a href="#claseMiguel" class="calendar-event">
+<span class="event-live">● TRANSMISIÓN</span>
+<span class="event-artist">MIGUEL ÁNGEL</span>
+<span class="event-time">7:00 PM — 9:00 PM</span>
+<span class="event-title">COLOR, ILUSTRACIÓN Y CONCEPT ART</span>
+</a>
+</div>
+
+<div class="calendar-cell">
+<span class="calendar-date">DÍA 02</span>
+<a href="#claseSantiago" class="calendar-event event-santiago">
+<span class="event-live">● TRANSMISIÓN FIJA</span>
+<span class="event-artist">SANTIAGO SAMA</span>
+<span class="event-time">7:00 PM — 9:00 PM</span>
+<span class="event-title">TATUAJE, EXPERIENCIA Y EDUCACIÓN</span>
+</a>
+</div>
+
+<div class="calendar-cell">
+<span class="calendar-date">DÍA 03</span>
+<a href="#claseMariana" class="calendar-event">
+<span class="event-live">● TRANSMISIÓN</span>
+<span class="event-artist">MARIANA CANO</span>
+<span class="event-time">7:00 PM — 9:00 PM</span>
+<span class="event-title">PIERCING, JOYERÍA Y CURADURÍA</span>
+</a>
+</div>
+
+<div class="calendar-cell">
+<span class="calendar-date">DÍA 04</span>
+<a href="#claseAndres" class="calendar-event">
+<span class="event-live">● TRANSMISIÓN</span>
+<span class="event-artist">ANDRÉS</span>
+<span class="event-time">7:00 PM — 9:00 PM</span>
+<span class="event-title">PIERCING, TÉCNICA Y LÍNEA FINA</span>
+</a>
+</div>
+
+<div class="calendar-cell">
+<span class="calendar-date">DÍA 05</span>
+<a href="#claseMario" class="calendar-event">
+<span class="event-live">● TRANSMISIÓN</span>
+<span class="event-artist">MARIO</span>
+<span class="event-time">7:00 PM — 9:00 PM</span>
+<span class="event-title">LETTERING, CALIGRAFÍA Y TRADICIÓN</span>
+</a>
+</div>
+
+<div class="calendar-cell">
+<span class="calendar-date">DÍA 06</span>
+<a href="#claseDAVID" class="calendar-event">
+<span class="event-live">● TRANSMISIÓN</span>
+<span class="event-artist">DAVID</span>
+<span class="event-time">7:00 PM — 9:00 PM</span>
+<span class="event-title">COLOR, TECNICA Y BIOSEGURIDAD</span></div>
+
+<div class="calendar-cell">
+<span class="calendar-date">DÍA 07</span>
+<div class="event-empty">DESCANSO / SIN TRANSMISIÓN</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="classes-section">
+<div class="section-heading">
+<span>CONOCE A LOS DOCENTES</span>
+<h2>ARTISTAS & CLASES</h2>
+<p>
+Cada tarjeta resume el enfoque de la clase. Puedes cambiar día, hora y
+contenido sin modificar la estructura del sitio.
+</p>
+</div>
+
+<div class="classes-artists-grid">
+
+<article class="class-artist-card" id="claseMiguel">
+<div class="class-artist-image">
+<img src="images/CAT_ARTIST/MIGUEL_ANGEL_TATTOO.png" alt="Miguel Ángel">
+<span class="class-artist-status">LUNES · 7:00 PM</span>
+</div>
+<div class="class-artist-content">
+<span class="class-location">MEDELLÍN · TATUADOR</span>
+<h3>MIGUEL ÁNGEL</h3>
+<p>Clase enfocada en color, composición ilustrativa y fundamentos visuales aplicados al tatuaje.</p>
+<div class="class-meta">
+<div class="class-meta-row"><span>DÍA</span><span>LUNES</span></div>
+<div class="class-meta-row"><span>HORARIO</span><span>7:00 PM — 9:00 PM</span></div>
+<div class="class-meta-row"><span>TEMA</span><span>FULL COLOR / ILUSTRACIÓN</span></div>
+</div>
+</div>
+</article>
+
+<article class="class-artist-card" id="claseSantiago">
+<div class="class-artist-image">
+<img src="images/CAT_ARTIST/SANTIAGO_SAMA.png" alt="Santiago Sama">
+<span class="class-artist-status">MARTES · 7:00 PM</span>
+</div>
+<div class="class-artist-content">
+<span class="class-location">ESPAÑA · TATUADOR</span>
+<h3>SANTIAGO SAMA</h3>
+<p>Transmisión sobre experiencias del oficio, procesos de trabajo, tatuaje y conocimientos de su trayectoria.</p>
+<div class="class-meta">
+<div class="class-meta-row"><span>DÍA</span><span>MARTES</span></div>
+<div class="class-meta-row"><span>HORARIO</span><span>7:00 PM — 9:00 PM</span></div>
+<div class="class-meta-row"><span>TEMA</span><span>TATUAJE / EDUCACIÓN</span></div>
+</div>
+</div>
+</article>
+
+<article class="class-artist-card" id="claseMariana">
+<div class="class-artist-image">
+<img src="images/CAT_ARTIST/MARIANA_PIERCING.png" alt="Mariana Cano">
+<span class="class-artist-status">MIÉRCOLES · 7:00 PM</span>
+</div>
+<div class="class-artist-content">
+<span class="class-location">MEDELLÍN / ITAGÜÍ · PIERCER</span>
+<h3>MARIANA CANO</h3>
+<p>Clase sobre selección de joyería, curaduría, composición y fundamentos para propuestas de piercing.</p>
+<div class="class-meta">
+<div class="class-meta-row"><span>DÍA</span><span>MIÉRCOLES</span></div>
+<div class="class-meta-row"><span>HORARIO</span><span>7:00 PM — 9:00 PM</span></div>
+<div class="class-meta-row"><span>TEMA</span><span>PIERCING / JOYERÍA</span></div>
+</div>
+</div>
+</article>
+
+<article class="class-artist-card" id="claseAndres">
+<div class="class-artist-image">
+<img src="images/CAT_ARTIST/ANDRES_PIERCING.png" alt="Andrés">
+<span class="class-artist-status">JUEVES · 7:00 PM</span>
+</div>
+<div class="class-artist-content">
+<span class="class-location">MEDELLÍN · TATUADOR / PIERCER</span>
+<h3>ANDRÉS</h3>
+<p>Clase orientada a técnica, precisión y criterios de trabajo aplicados al piercing y fundamentos de línea fina.</p>
+<div class="class-meta">
+<div class="class-meta-row"><span>DÍA</span><span>JUEVES</span></div>
+<div class="class-meta-row"><span>HORARIO</span><span>7:00 PM — 9:00 PM</span></div>
+<div class="class-meta-row"><span>TEMA</span><span>PIERCING / LÍNEA FINA</span></div>
+</div>
+</div>
+</article>
+
+<article class="class-artist-card" id="claseMario">
+<div class="class-artist-image">
+<img src="images/CAT_ARTIST/MARIO_tattoo.png" alt="Mario">
+<span class="class-artist-status">VIERNES · 7:00 PM</span>
+</div>
+<div class="class-artist-content">
+<span class="class-location">BOGOTÁ · TATUADOR</span>
+<h3>MARIO</h3>
+<p>Clase dedicada al lettering, caligrafía, construcción de letras y referencias chicanas y japonesas.</p>
+<div class="class-meta">
+<div class="class-meta-row"><span>DÍA</span><span>VIERNES</span></div>
+<div class="class-meta-row"><span>HORARIO</span><span>7:00 PM — 9:00 PM</span></div>
+<div class="class-meta-row"><span>TEMA</span><span>LETTERING / CALIGRAFÍA</span></div>
+</div>
+</div>
+</article>
+<article class="class-artist-card" id="claseDAVID">
+<div class="class-artist-image">
+<img src="images/CAT_ARTIST/DAVID_GIRALDO_TATTOO.png" alt="David">
+<span class="class-artist-status">SÁBADO · 7:00 PM</span>
+</div>
+<div class="class-artist-content">
+<span class="class-location">MEDELLÍN · TATUADOR</span>
+<h3>DAVID</h3>
+<p>Clase sobre color, técnica y bioseguridad en tatuaje.</p>
+<div class="class-meta">
+<div class="class-meta-row"><span>DÍA</span><span>SÁBADO</span></div>
+<div class="class-meta-row"><span>HORARIO</span><span>7:00 PM — 9:00 PM</span></div>
+<div class="class-meta-row"><span>TEMA</span><span>COLOR / TÉCNICA / BIOSEGURIDAD</span></div>
+</div>
+</div>
+</article>
+</div>
+</section>
+
+<section class="classes-section">
+<div class="section-heading">
+<span>FORMATO</span>
+<h2>¿QUÉ ENCONTRARÁS?</h2>
+</div>
+
+<div class="class-format">
+<div class="format-box">
+<i class="fa-solid fa-video"></i>
+<h3>Transmisión</h3>
+<p>Cada artista tendrá un espacio semanal para compartir en directo con la comunidad.</p>
+</div>
+<div class="format-box">
+<i class="fa-solid fa-graduation-cap"></i>
+<h3>Clase</h3>
+<p>El contenido puede centrarse en técnicas, procesos, experiencia profesional o fundamentos.</p>
+</div>
+<div class="format-box">
+<i class="fa-solid fa-comments"></i>
+<h3>Comunidad</h3>
+<p>Espacio para preguntas, conversación, intercambio de experiencias y aprendizaje.</p>
+</div>
+</div>
+</section>
+
+<div class="classes-back">
+<a href="index.html">← VOLVER A BURDO TATTOO COLLECTIVE</a>
+</div>
+
+<footer class="main-footer">
+<img src="images/icono.ico" alt="Burdo Tattoo Collective">
+<p>© <span id="currentYear"></span> Burdo Tattoo Collective. Todos los derechos reservados.</p>
+</footer>
+
+</div>
+
+<script>
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
