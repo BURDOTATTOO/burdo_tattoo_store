@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InkBro TV | Burdo Tattoo Collective</title>
+<meta name="description" content="Aprende del mundo del tatuaje con InkBro TV y Rodrigo Gálvez. Selección de capítulos de sus primeras tres temporadas.">
+<link rel="icon" type="image/x-icon" href="images/icono.ico">
+<link rel="stylesheet" href="/burdo_tattoo_store-main/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+.inkbro-page{--red:#e51d2a;--gold:#d8b36b;background:#090909;color:#f5f1e8;min-height:100vh}
+.inkbro-page *{box-sizing:border-box}.inkbro-page a{text-decoration:none}
+.inkbro-page .hero{min-height:420px;display:flex;align-items:center;padding:65px max(6vw,22px);background:linear-gradient(90deg,#000f,#000c 55%,#0008),url("https://img.youtube.com/vi/SUvEg0058po/maxresdefault.jpg") center/cover;border-bottom:1px solid #d8b36b66}
+.inkbro-page .hero-content{max-width:850px}.inkbro-page .kicker{color:var(--gold);font-size:12px;letter-spacing:4px;font-weight:800;text-transform:uppercase}
+.inkbro-page .hero h1{font-size:clamp(42px,7vw,82px);line-height:.98;margin:18px 0;text-transform:uppercase}.inkbro-page .hero h1 span{color:var(--red)}
+.inkbro-page .hero p,.inkbro-page .intro p{max-width:720px;color:#ccc;line-height:1.8}
+.inkbro-page .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.inkbro-page .cta{display:inline-flex;padding:13px 19px;border:1px solid var(--red);color:#fff;font-size:12px;font-weight:800;letter-spacing:1px}
+.inkbro-page .cta.primary{background:var(--red)}.inkbro-page .cta:hover{background:#fff;color:#111}
+.inkbro-page .intro{max-width:1200px;margin:auto;padding:50px 24px 20px}.inkbro-page .intro h2{font-size:clamp(27px,4vw,42px);margin:12px 0}
+.inkbro-page .feature{padding:20px;border-left:3px solid var(--red);background:#151515;color:#ccc;line-height:1.7}
+.inkbro-page .season{max-width:1200px;margin:auto;padding:28px 24px 15px;scroll-margin-top:20px}
+.inkbro-page .season-heading{display:flex;justify-content:space-between;align-items:end;gap:18px;border-bottom:1px solid #333;padding-bottom:15px;margin-bottom:20px}
+.inkbro-page .season-heading small{color:var(--red);font-weight:800;letter-spacing:2px}.inkbro-page .season-heading h2{font-size:clamp(24px,4vw,36px);margin:8px 0 0;text-transform:uppercase}.inkbro-page .season-heading p{color:#aaa;font-size:13px}
+.inkbro-page .video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.inkbro-page .video-card{padding:0;width:100%;text-align:left;color:inherit;background:#141414;border:1px solid #303030;cursor:pointer;overflow:hidden;transition:.2s}
+.inkbro-page .video-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 12px 28px #0008}
+.inkbro-page .thumb{display:block;position:relative;aspect-ratio:16/9;background:#222}.inkbro-page .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.inkbro-page .ep{position:absolute;top:10px;left:10px;background:#050505e8;color:var(--gold);padding:6px 8px;font-size:11px;font-weight:800}
+.inkbro-page .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#e51d2af2;color:white;border-radius:10px;padding:9px 17px;font-size:20px}
+.inkbro-page .card-copy{display:block;padding:17px}.inkbro-page .card-copy small{color:var(--red);font-size:10px;letter-spacing:1.5px;font-weight:800}
+.inkbro-page .card-copy strong{display:block;font-size:17px;line-height:1.35;margin:9px 0}.inkbro-page .card-copy span{display:block;color:#aaa;font-size:13px;line-height:1.6}
+.inkbro-page .card-copy em{display:inline-block;margin-top:13px;color:var(--gold);font-size:11px;font-style:normal;font-weight:800}
+.inkbro-page .channel{max-width:1152px;margin:35px auto 60px;padding:28px 24px;border:1px solid #333;background:#141414;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.inkbro-page .channel h2{margin:0 0 8px}.inkbro-page .channel p{color:#aaa;line-height:1.7;margin:0}
+.inkbro-page .footer{text-align:center;padding:25px;color:#888;border-top:1px solid #292929;font-size:12px}.inkbro-page .footer a{color:var(--gold)}
+.inkbro-modal{display:none;position:fixed;inset:0;z-index:99999;padding:22px;background:#000e;align-items:center;justify-content:center;overflow:auto}
+.inkbro-modal.open{display:flex}.inkbro-modal .dialog{width:min(100%,900px);max-height:calc(100vh - 44px);overflow:auto;background:#111;border:1px solid #d8b36b88;box-shadow:0 25px 90px #000;position:relative}
+.inkbro-modal .close{position:sticky;top:8px;float:right;z-index:2;margin:8px 8px -52px 0;width:42px;height:42px;border-radius:50%;border:1px solid #555;background:#080808ed;color:#fff;font-size:28px;cursor:pointer}
+.inkbro-modal .player{aspect-ratio:16/9;background:#000}.inkbro-modal iframe{width:100%;height:100%;border:0;display:block}
+.inkbro-modal .modal-copy{padding:25px 28px 30px}.inkbro-modal .modal-copy small{color:var(--red);font-weight:800;letter-spacing:2px}.inkbro-modal .modal-copy h2{font-size:clamp(23px,4vw,34px);margin:10px 0}.inkbro-modal .modal-copy p{color:#ccc;line-height:1.8}.inkbro-modal .modal-copy a{color:var(--gold);font-weight:800}
+@media(max-width:800px){.inkbro-page .video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.inkbro-page .channel{flex-direction:column;align-items:flex-start}}
+@media(max-width:540px){.inkbro-page .hero{padding:50px 20px}.inkbro-page .video-grid{grid-template-columns:1fr}.inkbro-page .season-heading{align-items:flex-start;flex-direction:column}.inkbro-page .season-heading p{margin:0}.inkbro-page .season{padding:25px 16px}.inkbro-page .intro{padding:38px 20px 15px}.inkbro-modal{padding:9px}.inkbro-modal .dialog{max-height:calc(100vh - 18px)}.inkbro-modal .modal-copy{padding:20px}}
+</style>
+</head>
+<body>
+<div class="inkbro-page">
+<header class="header">
+<nav class="navbar">
+<div class="nav-left">
+<a href="index.html#inicio">Inicio</a><a href="index.html#artistas">Artistas</a><a href="index.html#piercing">Piercing</a>
+<a href="youtube.html" class="btn-header-agenda">YOUTUBE / ASESORÍAS</a><a href="inkbro.html" class="btn-header-agenda" aria-current="page">INKBRO</a>
+<a href="index.html#modal2" class="btn-header-agenda">FORMULARIO</a><a href="index.html#modalPago" class="btn-header-pago">PASARELA DE PAGO</a>
+</div>
+<div class="nav-right">
+<a href="https://www.instagram.com/burdo_tattoo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://api.whatsapp.com/send?phone=573017548772" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://maps.app.goo.gl/X6cFvfiM6TkhcBxy8" target="_blank" rel="noopener noreferrer" aria-label="Ubicación"><i class="fa-solid fa-location-dot"></i></a>
+</div>
+<button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú móvil" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+<a href="index.html#inicio">Inicio</a><a href="index.html#artistas">Artistas</a><a href="index.html#piercing">Piercing</a>
+<a href="youtube.html">YOUTUBE / ASESORÍAS</a><a href="inkbro.html">INKBRO</a><a href="index.html#contacto">Contacto</a>
+<a href="index.html#modal2" class="btn-header-agenda">FORMULARIO</a><a href="index.html#modalPago" class="btn-header-pago">PASARELA DE PAGO</a>
+</div>
+</header>
+<main>
+<section class="hero"><div class="hero-content"><span class="kicker">Burdo Tattoo Collective presenta</span>
+<h1>INKBRO <span>TV</span></h1>
+<p>Rodrigo Gálvez es un excelente artista que decidió compartir con la comunidad toda su enorme sabiduría y experiencia. En esta selección reunimos capítulos de las primeras tres temporadas de InkBro TV para aprender sobre fundamentos, técnicas y distintos estilos de tatuaje.</p>
+<div class="actions"><a class="cta primary" href="#temporada-1">VER CAPÍTULOS</a><a class="cta" href="https://www.youtube.com/@InkBroTV" target="_blank" rel="noopener noreferrer">CANAL OFICIAL ↗</a></div>
+</div></section>
+<section class="intro"><span class="kicker">Aprender compartiendo</span><h2>Experiencia real, conocimiento abierto</h2>
+<p>InkBro TV nació para abrir el mundo del tatuaje y ofrecer un espacio de apoyo donde tatuadores y personas que quieren iniciarse puedan resolver dudas y compartir conocimientos. Rodrigo convirtió su experiencia profesional en contenido educativo accesible para la comunidad.</p>
+<p>Selecciona cualquier capítulo para abrirlo en una ventana emergente con el reproductor y una descripción del tema. Los videos se reproducen desde YouTube.</p>
+<div class="feature"><strong>UNA SERIE PARA APRENDER</strong><br>Fundamentos, rellenos, sombras, ilustración, tatuaje tradicional, neotradicional, acuarela y puntillismo.</div></section>
+
+    <section class="season" id="temporada-1">
+      <div class="season-heading"><div><small>PRIMERAS TRES TEMPORADAS</small><h2>Temporada 1: Los fundamentos</h2></div><p>Bases técnicas</p></div>
+      <div class="video-grid">
+        <button class="video-card" type="button" data-video="SUvEg0058po" data-season="TEMPORADA 1 · CAPÍTULO 01" data-title="Aprende a tatuar" data-description="Rodrigo Gálvez presenta los materiales, explica cómo hacer el calco o transfer y organizar la mesa de trabajo. El capítulo termina con una primera práctica sobre piel de fruta.">
+          <span class="thumb"><img src="https://img.youtube.com/vi/SUvEg0058po/hqdefault.jpg" alt="" loading="lazy"><span class="ep">1x01</span><span class="play">▶</span></span>
+          <span class="card-copy"><small>TEMPORADA 1 · CAPÍTULO 01</small><strong>Aprende a tatuar</strong><span>Materiales, transfer, preparación de la mesa y primera práctica.</span><em>VER CAPÍTULO ↗</em></span>
+        </button>
+        <button class="video-card" type="button" data-video="kZ1jY1O2hgE" data-season="TEMPORADA 1 · CAPÍTULO 02" data-title="Aprende a hacer rellenos" data-description="Introducción a los rellenos en el tatuaje: diferentes configuraciones de agujas, diferencias entre máquinas y nociones para trabajar con agujas de línea, Round Shader y Magnum.">
+          <span class="thumb"><img src="https://img.youtube.com/vi/kZ1jY1O2hgE/hqdefault.jpg" alt="" loading="lazy"><span class="ep">1x02</span><span class="play">▶</span></span>
+          <span class="card-copy"><small>TEMPORADA 1 · CAPÍTULO 02</small><strong>Aprende a hacer rellenos</strong><span>Tipos de agujas, máquinas y fundamentos del relleno.</span><em>VER CAPÍTULO ↗</em></span>
+        </button>
+        <button class="video-card" type="button" data-video="SEARCH:InkBro TV 1x03 Cómo hacer sombras" data-season="TEMPORADA 1 · CAPÍTULO 03" data-title="Cómo hacer sombras" data-description="Capítulo dedicado a los fundamentos de las sombras en el tatuaje.">
+          <span class="thumb"><img src="https://img.youtube.com/vi/SUvEg0058po/hqdefault.jpg" alt="" loading="lazy"><span class="ep">1x03</span><span class="play">▶</span></span>
+          <span class="card-copy"><small>TEMPORADA 1 · CAPÍTULO 03</small><strong>Cómo hacer sombras</strong><span>Conceptos iniciales para trabajar sombras y degradados.</span><em>VER CAPÍTULO ↗</em></span>
+        </button></div>
+    </section>
+    <section class="season" id="temporada-2">
+      <div class="season-heading"><div><small>PRIMERAS TRES TEMPORADAS</small><h2>Temporada 2: Explora estilos</h2></div><p>Lenguajes visuales</p></div>
+      <div class="video-grid">
+        <button class="video-card" type="button" data-video="50-2NQAtOe0" data-season="TEMPORADA 2 · CAPÍTULO 01" data-title="Tatuaje ilustrativo" data-description="La temporada comienza con un diseño ilustrativo y pone en práctica fundamentos aprendidos en la primera temporada. También profundiza en las máquinas rotativas y su calibración.">
+          <span class="thumb"><img src="https://img.youtube.com/vi/50-2NQAtOe0/hqdefault.jpg" alt="" loading="lazy"><span class="ep">2x01</span><span class="play">▶</span></span>
+          <span class="card-copy"><small>TEMPORADA 2 · CAPÍTULO 01</small><strong>Tatuaje ilustrativo</strong><span>Diseño, trazado y uso de máquinas rotativas.</span><em>VER CAPÍTULO ↗</em></span>
+        </button>
+        <button class="video-card" type="button" data-video="ymM6IyNmfzk" data-season="TEMPORADA 2 · CAPÍTULO 02" data-title="Tatuaje tradicional" data-description="Recorrido por la historia y los elementos característicos del tatuaje tradicional, incluyendo agujas, máquinas, stencil, líneas y colores típicos del estilo.">
+          <span class="thumb"><img src="https://img.youtube.com/vi/ymM6IyNmfzk/hqdefault.jpg" alt="" loading="lazy"><span class="ep">2x02</span><span class="play">▶</span></span>
+          <span class="card-copy"><small>TEMPORADA 2 · CAPÍTULO 02</small><strong>Tatuaje tradicional</strong><span>Historia, agujas, máquinas, líneas y paleta de color.</span><em>VER CAPÍTULO ↗</em></span>
+        </button>
+        <button class="video-card" type="button" data-video="0yD47-V61m0" data-season="TEMPORADA 2 · CAPÍTULO 03" data-title="Tatuaje neotradicional" data-description="Se desarrolla una pieza neotradicional y se repasan el stencil, la preparación de la máquina, las líneas, el relleno, las sombras, los degradados y los detalles.">
+          <span class="thumb"><img src="https://img.youtube.com/vi/0yD47-V61m0/hqdefault.jpg" alt="" loading="lazy"><span class="ep">2x03</span><span class="play">▶</span></span>
+          <span class="card-copy"><small>TEMPORADA 2 · CAPÍTULO 03</small><strong>Tatuaje neotradicional</strong><span>Una pieza para estudiar líneas, rellenos, sombras y detalles.</span><em>VER CAPÍTULO ↗</em></span>
+        </button></div>
+    </section>
+    <section class="season" id="temporada-3">
+      <div class="season-heading"><div><small>PRIMERAS TRES TEMPORADAS</small><h2>Temporada 3: Experimenta con técnicas</h2></div><p>Nuevos recursos</p></div>
+      <div class="video-grid">
+        <button class="video-card" type="button" data-video="FG_uvxcmujo" data-season="TEMPORADA 3 · CAPÍTULO 01" data-title="Tatuaje acuarela" data-description="Rodrigo presenta el estilo acuarela y retoma el propósito educativo de la serie: resolver dudas y ayudar a tatuadores principiantes y avanzados a mejorar sus habilidades.">
+          <span class="thumb"><img src="https://img.youtube.com/vi/FG_uvxcmujo/hqdefault.jpg" alt="" loading="lazy"><span class="ep">3x01</span><span class="play">▶</span></span>
+          <span class="card-copy"><small>TEMPORADA 3 · CAPÍTULO 01</small><strong>Tatuaje acuarela</strong><span>Recursos visuales y enfoque del estilo acuarela.</span><em>VER CAPÍTULO ↗</em></span>
+        </button>
+        <button class="video-card" type="button" data-video="iiHuCjPa5Zg" data-season="TEMPORADA 3 · CAPÍTULO 02" data-title="Tatuaje puntillismo" data-description="El puntillismo o dotwork es el protagonista de este capítulo. Rodrigo comparte pautas para desarrollar una pieza con esta técnica y consejos para mejorar el resultado.">
+          <span class="thumb"><img src="https://img.youtube.com/vi/iiHuCjPa5Zg/hqdefault.jpg" alt="" loading="lazy"><span class="ep">3x02</span><span class="play">▶</span></span>
+          <span class="card-copy"><small>TEMPORADA 3 · CAPÍTULO 02</small><strong>Tatuaje puntillismo</strong><span>Conceptos y recomendaciones para trabajar dotwork.</span><em>VER CAPÍTULO ↗</em></span>
+        </button>
+        <button class="video-card" type="button" data-video="SEARCH:InkBro TV 3x03 Aprende a tatuar Letras" data-season="TEMPORADA 3 · CAPÍTULO 03" data-title="Aprende a tatuar letras" data-description="Capítulo dedicado al lettering aplicado al tatuaje.">
+          <span class="thumb"><img src="https://img.youtube.com/vi/iiHuCjPa5Zg/hqdefault.jpg" alt="" loading="lazy"><span class="ep">3x03</span><span class="play">▶</span></span>
+          <span class="card-copy"><small>TEMPORADA 3 · CAPÍTULO 03</small><strong>Aprende a tatuar letras</strong><span>Introducción al lettering dentro del mundo del tatuaje.</span><em>VER CAPÍTULO ↗</em></span>
+        </button></div>
+    </section>
+<section class="channel"><div><h2>Descubre más contenido de InkBro TV</h2><p>Visita el canal oficial para ver el resto de temporadas, tutoriales y publicaciones de Rodrigo Gálvez.</p></div><a class="cta primary" href="https://www.youtube.com/@InkBroTV" target="_blank" rel="noopener noreferrer">VISITAR INKBRO TV ↗</a></section>
+</main>
+<footer class="footer"><p>© <span id="inkbroYear"></span> Burdo Tattoo Collective · Contenido audiovisual alojado en YouTube.</p><p><a href="index.html">Volver a Burdo Tattoo Collective</a></p></footer>
+</div>
+<div class="inkbro-modal" id="inkbroModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="dialog">
+<button class="close" type="button" aria-label="Cerrar video">×</button><div class="player" id="modalPlayer"></div>
+<div class="modal-copy"><small id="modalSeason"></small><h2 id="modalTitle"></h2><p id="modalDescription"></p><a id="modalLink" href="#" target="_blank" rel="noopener noreferrer">Abrir video en YouTube ↗</a></div>
+</div></div>
+<script>
+(function(){
+"use strict";
+const modal=document.getElementById("inkbroModal"), player=document.getElementById("modalPlayer");
+const closeBtn=modal.querySelector(".close"); let lastTrigger=null;
+document.getElementById("inkbroYear").textContent=new Date().getFullYear();
+function closeModal(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true");player.replaceChildren();document.body.style.overflow="";if(lastTrigger)lastTrigger.focus();}
+document.querySelectorAll(".video-card").forEach(function(card){card.addEventListener("click",function(){
+const video=card.dataset.video;lastTrigger=card;
+document.getElementById("modalSeason").textContent=card.dataset.season;
+document.getElementById("modalTitle").textContent=card.dataset.title;
+document.getElementById("modalDescription").textContent=card.dataset.description;
+const link=document.getElementById("modalLink");player.replaceChildren();
+if(video.startsWith("SEARCH:")){
+link.href="https://www.youtube.com/results?search_query="+encodeURIComponent(video.slice(7));
+link.textContent="Buscar este capítulo en YouTube ↗";
+const note=document.createElement("p");note.style.padding="18px";note.textContent="No pude verificar el enlace directo de este episodio. Usa el enlace de búsqueda oficial de YouTube para abrir el capítulo correcto.";player.appendChild(note);
+}else{
+const iframe=document.createElement("iframe");iframe.src="https://www.youtube-nocookie.com/embed/"+encodeURIComponent(video)+"?autoplay=1&rel=0";
+iframe.title=card.dataset.title;iframe.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+iframe.referrerPolicy="strict-origin-when-cross-origin";iframe.allowFullscreen=true;player.appendChild(iframe);
+link.href="https://www.youtube.com/watch?v="+encodeURIComponent(video);link.textContent="Abrir video en YouTube ↗";
+}
+modal.classList.add("open");modal.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";closeBtn.focus();
+});});
+closeBtn.addEventListener("click",closeModal);modal.addEventListener("click",e=>{if(e.target===modal)closeModal();});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&modal.classList.contains("open"))closeModal();});
+const menuBtn=document.getElementById("menuBtn"),mobileMenu=document.getElementById("mobileMenu");
+if(menuBtn&&mobileMenu){menuBtn.addEventListener("click",function(){const open=mobileMenu.classList.toggle("active");menuBtn.setAttribute("aria-expanded",String(open));});
+mobileMenu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{mobileMenu.classList.remove("active");menuBtn.setAttribute("aria-expanded","false");}));}
+})();
+</script>
+</body></html>
